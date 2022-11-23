@@ -1,15 +1,18 @@
+import EdgeIcon from '../icons/EdgeIcon';
+
 import classes from './StickySocials.module.css';
 
-import facebookImg from './../imgs/facebook.png';
-import twitterImg from './../imgs/twitter.png';
-import instaImg from './../imgs/insta.png';
+import facebookImg from './../../imgs/facebook.png';
+import twitterImg from './../../imgs/twitter.png';
+import instaImg from './../../imgs/insta.png';
 
 function StickySocials() {
   return (
     // TODO: use react-router-dom for menu links
     <div className={classes.socialsColumn}>
       <a href='#' className={classes.socialBG}>
-        <img src={facebookImg} />
+        <EdgeIcon fill='#ff0000' height='200' width='230' />
+        {/* <img src={facebookImg} /> */}
       </a>
       <a href='#' className={classes.socialBG}>
         <img src={twitterImg} />

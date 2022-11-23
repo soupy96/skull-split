@@ -2,7 +2,7 @@ import NavMenu from './NavMenu';
 
 import classes from './NavBar.module.css';
 
-import skullImg from './../imgs/skull.png';
+import skullImg from './../../imgs/skull.png';
 
 function NavBar() {
   return (
