@@ -1,0 +1,38 @@
+/* TODO: Make the size of the cards closer to the design, more rectangle than square */
+.infoCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0px;
+  margin-top: -125px;
+}
+
+.infoCard {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.leftDropShadow {
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.middleDropShadow {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.rightDropShadow {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.greenText {
+  color: #88c228;
+}

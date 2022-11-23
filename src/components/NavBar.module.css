@@ -1,0 +1,10 @@
+.navBar {
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.playNow {
+  float: right;
+}
