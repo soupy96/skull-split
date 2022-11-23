@@ -11,8 +11,8 @@ function StickySocials() {
     // TODO: use react-router-dom for menu links
     <div className={classes.socialsColumn}>
       <a href='#' className={classes.socialBG}>
-        <EdgeIcon fill='#ff0000' height='200' width='230' />
-        {/* <img src={facebookImg} /> */}
+        {/* <EdgeIcon fill='#ff0000' /> */}
+        <img src={facebookImg} />
       </a>
       <a href='#' className={classes.socialBG}>
         <img src={twitterImg} />
