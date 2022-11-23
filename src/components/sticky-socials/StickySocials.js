@@ -1,10 +1,12 @@
 import EdgeIcon from '../icons/EdgeIcon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 
 import classes from './StickySocials.module.css';
-
-import facebookImg from './../../imgs/facebook.png';
-import twitterImg from './../../imgs/twitter.png';
-import instaImg from './../../imgs/insta.png';
 
 function StickySocials() {
   return (
@@ -12,13 +14,14 @@ function StickySocials() {
     <div className={classes.socialsColumn}>
       <a href='#' className={classes.socialBG}>
         {/* <EdgeIcon fill='#ff0000' /> */}
-        <img src={facebookImg} />
+        {/* <img src={facebookImg} /> */}
+        <FontAwesomeIcon icon={faFacebook} />
       </a>
       <a href='#' className={classes.socialBG}>
-        <img src={twitterImg} />
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
       <a href='#' className={classes.socialBG}>
-        <img src={instaImg} />
+        <FontAwesomeIcon icon={faInstagram} />
       </a>
     </div>
   );
