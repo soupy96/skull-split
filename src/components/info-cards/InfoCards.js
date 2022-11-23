@@ -6,7 +6,7 @@ function InfoCards() {
     // TODO: Make the size of the cards closer to the design, more rectangle than square
     <Root>
       <LeftDropShadow>
-        <StyledPara>Lorem Ipsum</StyledPara>
+        <p>Lorem Ipsum</p>
         <p>Lorem Ipsum</p>
         <GreenText>Lorem Ipsum</GreenText>
       </LeftDropShadow>

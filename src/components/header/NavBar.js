@@ -1,16 +1,17 @@
+import styled from 'styled-components';
 import NavMenu from './NavMenu';
 
-import classes from './NavBar.module.css';
-
 import skullImg from './../../imgs/skull.png';
+import { LogoImg } from './Logo';
 
 function NavBar() {
   return (
     // TODO: make svg path bg of play button/link
     // TODO: use react-router-dom for play now link if using a link
-    <div className={classes.navBar}>
+    <NavBarBox>
       <div>
-        <img src={skullImg} />
+        <LogoImg src={skullImg} />
+        {/* <img src={skullImg} /> */}
       </div>
       <NavMenu />
       <svg height='210' width='400'>
@@ -19,11 +20,18 @@ function NavBar() {
           fill='#f0ff00'
         />
       </svg>
-      <a href='#' className={classes.playNow}>
-        Play Now
-      </a>
-    </div>
+      <PlayNow href='#'>Play Now</PlayNow>
+    </NavBarBox>
   );
 }
+
+const NavBarBox = styled.div`
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+const PlayNow = styled.a``;
 
 export default NavBar;

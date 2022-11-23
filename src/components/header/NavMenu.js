@@ -1,9 +1,10 @@
-import classes from './NavMenu.module.css';
+import styled from 'styled-components';
 
 function NavMenu() {
   return (
     // TODO: make menu 'popout' on menu click
-    // TODO: use react-router-dom for links
+    // TODO: use react-router-dom for links3
+    // TODO: make smooth css animation on menu button click
     <div>
       <nav>
         <ul>
