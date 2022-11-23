@@ -1,16 +1,12 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 
 function InfoCards() {
-  const [isGreen, setIsGreen] = useState(true);
-
   return (
     // TODO: refine the overlay
     // TODO: Make the size of the cards closer to the design, more rectangle than square
     <Root>
       <LeftDropShadow>
-        <StyledPara isGreen={isGreen}>Lorem Ipsum</StyledPara>
-        <button onClick={() => setIsGreen((prev) => !prev)}>Testing</button>
+        <StyledPara>Lorem Ipsum</StyledPara>
         <p>Lorem Ipsum</p>
         <GreenText>Lorem Ipsum</GreenText>
       </LeftDropShadow>
@@ -64,10 +60,6 @@ const RightDropShadow = styled(Card)`
 
 const GreenText = styled.p`
   color: #88c228;
-`;
-
-const StyledPara = styled.p`
-  color: ${(props) => (props.isGreen ? 'green' : 'red')};
 `;
 
 export default InfoCards;

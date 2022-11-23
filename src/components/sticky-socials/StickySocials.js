@@ -1,4 +1,3 @@
-import EdgeIcon from '../icons/EdgeIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -13,8 +12,6 @@ function StickySocials() {
     // TODO: use react-router-dom for menu links
     <div className={classes.socialsColumn}>
       <a href='#' className={classes.socialBG}>
-        {/* <EdgeIcon fill='#ff0000' /> */}
-        {/* <img src={facebookImg} /> */}
         <FontAwesomeIcon icon={faFacebook} />
       </a>
       <a href='#' className={classes.socialBG}>

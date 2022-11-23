@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import classes from './GameInfo.module.css';
 
 function GameInfo() {
