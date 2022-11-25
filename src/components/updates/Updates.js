@@ -1,17 +1,25 @@
-// import classes from './Updates.module.css';
+import styled from 'styled-components';
+
+import NestedRoot from '../re-usable/NestedRoot';
 
 function Updates() {
   return (
     // TODO: better select h tags website wide or just use simple p tag style
-    <div>
-      <h3>Updates</h3>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <Root>
+      <NestedRoot>
+        <h3>Updates</h3>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </NestedRoot>
+    </Root>
   );
 }
+
+const Root = styled.div`
+  background-color: #ffffff;
+`;
 
 export default Updates;
