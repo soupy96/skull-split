@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import App from './App';
 
-import './index.css';
+import './assets/css/index.css';
 
 // TODO: i think we load a font here
 

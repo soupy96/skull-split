@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import ESRBImg from './../../imgs/na-esrb.png';
+import ESRBImg from './../../assets/imgs/na-esrb.png';
 
 function ESRB() {
   return (
