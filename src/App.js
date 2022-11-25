@@ -1,24 +1,31 @@
-import NavBar from './components/header/NavBar';
-import HeroSection from './components/hero-section/HeroSection';
-import GameInfo from './components/game-info/GameInfo';
-import InfoCards from './components/info-cards/InfoCards';
-import StickySocials from './components/sticky-socials/StickySocials';
-import Updates from './components/updates/Updates';
-import Footer from './components/footer/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Layout from './components/re-usable/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyNotice from './pages/PrivacyNotice';
+import TermsOfService from './pages/TermsOfService';
+import CookiePreferences from './pages/CookiePreferences';
+import NoPage from './pages/NoPage';
 
 // TODO: move all css modules to styled components and make resuable styled components in a StyledComponent.js
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <StickySocials />
-      <HeroSection />
-      <GameInfo />
-      <InfoCards />
-      <Updates />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='contact' element={<Contact />} />
+          <Route path='privacynotice' element={<PrivacyNotice />} />
+          <Route path='termsofservice' element={<TermsOfService />} />
+          <Route path='cookiepreferences' element={<CookiePreferences />} />
+          <Route path='*' element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
