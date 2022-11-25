@@ -6,17 +6,27 @@ import NavMenu from './NavMenu';
 function NavBar() {
   return (
     // TODO: make svg path bg of play button/link
-    // TODO: use react-router-dom for play now link if using a link
+    // TODO: try and center text in the play link better. its almost there!
     <NavBarBox>
       <Logo />
       <NavMenu />
-      <svg height='210' width='400'>
-        <path
-          d='M10 0 L225 0 L250 30 L250 100 L50 100 L10 70 Z'
-          fill='#f0ff00'
-        />
+      <svg height='75' width='200'>
+        <PlayNow href='#'>
+          <path
+            d='M10 0 L170 0 L200 30 L200 75 L40 75 L10 45 Z'
+            fill='#f0ff00'
+          />
+          <text
+            x='100'
+            y='37.5'
+            fill='#000000'
+            dominant-baseline='middle'
+            text-anchor='middle'
+          >
+            Play Now
+          </text>
+        </PlayNow>
       </svg>
-      <PlayNow href='#'>Play Now</PlayNow>
     </NavBarBox>
   );
 }
@@ -26,7 +36,12 @@ const NavBarBox = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
+  padding: 30px 0px;
+  height: 100px;
 `;
+
+const LogoNav = styled(Logo)``;
 
 const PlayNow = styled.a``;
 

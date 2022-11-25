@@ -24,9 +24,6 @@ const FooterNav = styled.div`
   justify-content: space-between;
   flex-direction: row;
 
-  li {
-  }
-
   a {
     color: #ffffff;
     text-decoration: none;

@@ -8,17 +8,22 @@ import styled from 'styled-components';
 
 function StickySocials() {
   return (
-    // TODO: use react-router-dom for menu links
     // TODO: make socials sticky and scroll while the user scrolls but stop at the navbar and footer
     <SocialsColumn>
       <SocialBG href='#'>
-        <FontAwesomeIcon icon={faFacebook} />
+        <a href='https://www.facebook.com/' target='_blank'>
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
       </SocialBG>
       <SocialBG href='#'>
-        <FontAwesomeIcon icon={faTwitter} />
+        <a href='https://www.twitter.com/' target='_blank'>
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
       </SocialBG>
       <SocialBG href='#'>
-        <FontAwesomeIcon icon={faInstagram} />
+        <a href='https://www.instagram.com/' target='_blank'>
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </SocialBG>
     </SocialsColumn>
   );
