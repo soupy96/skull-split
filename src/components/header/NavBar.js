@@ -1,18 +1,14 @@
 import styled from 'styled-components';
-import NavMenu from './NavMenu';
 
-import skullImg from './../../imgs/skull.png';
-import { LogoImg } from './Logo';
+import Logo from '../re-usable/Logo';
+import NavMenu from './NavMenu';
 
 function NavBar() {
   return (
     // TODO: make svg path bg of play button/link
     // TODO: use react-router-dom for play now link if using a link
     <NavBarBox>
-      <div>
-        <LogoImg src={skullImg} />
-        {/* <img src={skullImg} /> */}
-      </div>
+      <Logo />
       <NavMenu />
       <svg height='210' width='400'>
         <path

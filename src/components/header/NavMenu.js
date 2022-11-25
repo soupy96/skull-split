@@ -1,16 +1,21 @@
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function NavMenu() {
   return (
     // TODO: make menu 'popout' on menu click
-    // TODO: use react-router-dom for links3
     // TODO: make smooth css animation on menu button click
     <div>
       <nav>
         <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
+          <li>
+            <Link to='/'>HOME</Link>
+          </li>
+          <li>
+            <Link to='/about'>ABOUT</Link>
+          </li>
+          <li>
+            <Link to='/contact'>CONTACT</Link>
+          </li>
         </ul>
       </nav>
     </div>
