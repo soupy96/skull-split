@@ -25,13 +25,17 @@ function Footer() {
 const Root = styled.div`
   background-color: #181818;
   color: #ffffff;
+  width: 100%;
+  height: 500px;
 `;
 
 const NestedRootFooter = styled(NestedStyle)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 35%;
+  height: 100%;
 `;
 
 const Copyright = styled.div`
