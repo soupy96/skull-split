@@ -19,9 +19,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='privacynotice' element={<PrivacyNotice />} />
-          <Route path='termsofservice' element={<TermsOfService />} />
-          <Route path='cookiepreferences' element={<CookiePreferences />} />
+          <Route path='privacy-notice' element={<PrivacyNotice />} />
+          <Route path='terms-of-service' element={<TermsOfService />} />
+          <Route path='cookie-preferences' element={<CookiePreferences />} />
           <Route path='*' element={<NoPage />} />
         </Route>
       </Routes>

@@ -5,13 +5,13 @@ function FooterMenu() {
   return (
     <FooterNav>
       <li>
-        <Link to='/privacynotice'>Privacy Notice</Link>
+        <Link to='/privacy-notice'>Privacy Notice</Link>
       </li>
       <li>
-        <Link to='/termsofservice'>Terms of Service</Link>
+        <Link to='/terms-of-service'>Terms of Service</Link>
       </li>
       <li>
-        <Link to='/cookiePreferences'>Cookie Preferences</Link>
+        <Link to='/cookie-preferences'>Cookie Preferences</Link>
       </li>
     </FooterNav>
   );
