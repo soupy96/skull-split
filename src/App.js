@@ -9,8 +9,6 @@ import TermsOfService from './pages/TermsOfService';
 import CookiePreferences from './pages/CookiePreferences';
 import NoPage from './pages/NoPage';
 
-// TODO: move all css modules to styled components and make resuable styled components in a StyledComponent.js
-
 function App() {
   return (
     <BrowserRouter>

@@ -1,21 +1,24 @@
 import styled from 'styled-components';
 
+import NestedRoot from '../re-usable/NestedRoot';
+
 import bgImage from './../../assets/imgs/hero-image.png';
 
 function HeroSection() {
   return (
-    // TODO: make button transition smooth
     <BigImage>
-      <MiddleText>
-        <p>A 5v5 character-based tactical shooter</p>
-        <h1>SKULL SPLIT</h1>
-        <MainButt>
-          <ButtDiv>
-            <ButtOverlay></ButtOverlay>
-            <p>Play Now</p>
-          </ButtDiv>
-        </MainButt>
-      </MiddleText>
+      <NestedRoot>
+        <MiddleText>
+          <p>A 5v5 character-based tactical shooter</p>
+          <h1>SKULL SPLIT</h1>
+          <MainButt>
+            <ButtDiv>
+              <ButtOverlay></ButtOverlay>
+              <p>Play Now</p>
+            </ButtDiv>
+          </MainButt>
+        </MiddleText>
+      </NestedRoot>
     </BigImage>
   );
 }

@@ -5,8 +5,6 @@ import App from './App';
 
 import './assets/css/index.css';
 
-// TODO: i think we load a font here
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

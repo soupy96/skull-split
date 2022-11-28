@@ -4,7 +4,6 @@ import NestedRoot from '../re-usable/NestedRoot';
 
 function Updates() {
   return (
-    // TODO: better select h tags website wide or just use simple p tag style
     <Root>
       <NestedRoot>
         <h3>Updates</h3>

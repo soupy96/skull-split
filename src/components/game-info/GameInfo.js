@@ -1,16 +1,40 @@
 import styled from 'styled-components';
+import NestedRoot from '../re-usable/NestedRoot';
 
 function GameInfo() {
   return (
-    // TODO: once i have the svg path done for the play now button/link in the header, use here as well
+    // TODO: redraw the svg so that its longer horizontally
     <MainInfo>
-      <BlackText>Lorem Ipsum 23/11/2022</BlackText>
-      <div>
-        <p>Lorem Ipsum</p>
-        <YellowText>Lorem Ipsum</YellowText>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-      </div>
+      <NestedRoot>
+        <svg height='75' width='505'>
+          <path
+            d='M10 5 L170 5 L200 30 L200 75 L40 75 L10 45 Z'
+            fill='#f0ff00'
+          />
+          <text
+            x='100'
+            y='37.5'
+            fill='#000000'
+            dominant-baseline='middle'
+            text-anchor='middle'
+          >
+            <BlackText>Lorem Ipsum 2077/08/14</BlackText>
+          </text>
+        </svg>
+        <div>
+          <p>Ut at eleifend mi.</p>
+          <YellowText>Lorem ipsum dolor sit amet, consectetur</YellowText>
+          <p>
+            Hasellus vestibulum pellentesque lacinia. Ut eget faucibus nisi, nec
+            mattis arcu. Etiam tincidunt leo leo, ut pretium massa mattis id.
+            Donec dictum sem vel condimentum accumsan.
+          </p>
+          <p>
+            Nulla sagittis lacinia odio, sed vestibulum ex laoreet ac. In
+            tristique, sem ut tempus mattis
+          </p>
+        </div>
+      </NestedRoot>
     </MainInfo>
   );
 }
@@ -20,6 +44,7 @@ const MainInfo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #ffffff;
   background: rgb(58, 66, 57);
   background: -moz-radial-gradient(

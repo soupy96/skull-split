@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 function NavMenu() {
   return (
-    // TODO: make menu 'popout' on menu click
-    // TODO: make smooth css animation on menu button click
+    // TODO: make interactive menu later when the website is done, make menu 'popout' on menu click, make smooth css animation on menu button click
     <Nav>
       <MenuCircle></MenuCircle>
       <NavUl>

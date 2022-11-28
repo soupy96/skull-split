@@ -1,26 +1,31 @@
 import styled from 'styled-components';
+import NestedRoot from '../re-usable/NestedRoot';
 
 function InfoCards() {
   return (
     // TODO: refine the overlay
     // TODO: Make the size of the cards closer to the design, more rectangle than square
-    <Root>
-      <LeftDropShadow>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-        <GreenText>Lorem Ipsum</GreenText>
-      </LeftDropShadow>
-      <MiddleDropShadow>
-        <p>Lorem Ipsum</p>
-        <GreenText>Lorem Ipsum</GreenText>
-        <p>Lorem Ipsum</p>
-      </MiddleDropShadow>
-      <RightDropShadow>
-        <p>Lorem Ipsum</p>
-        <p>Lorem Ipsum</p>
-        <GreenText>Lorem Ipsum</GreenText>
-      </RightDropShadow>
-    </Root>
+    <NestedRoot>
+      <Root>
+        <LeftDropShadow>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>Ut sit amet pretuim ex</p>
+          <GreenText>$100,000,000!</GreenText>
+        </LeftDropShadow>
+        <MiddleDropShadow>
+          <p>Lorem ipsum</p>
+          <GreenText>Rutrum odio</GreenText>
+          <p>Sit amet purus</p>
+        </MiddleDropShadow>
+        <RightDropShadow>
+          <p>Vestibulum</p>
+          <p>DOLOR ACCUMSAN LAOREET Dolor accumsan laoreet</p>
+          <GreenText>
+            Vestibulum ultrices magna a pellentesque maximus egestat at nibh
+          </GreenText>
+        </RightDropShadow>
+      </Root>
+    </NestedRoot>
   );
 }
 
@@ -31,6 +36,7 @@ const Root = styled.div`
   align-items: center;
   padding: 50px 0px;
   margin-top: -125px;
+  text-align: center;
 `;
 
 const Card = styled.div`
