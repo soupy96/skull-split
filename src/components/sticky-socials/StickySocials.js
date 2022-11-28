@@ -8,36 +8,43 @@ import styled from 'styled-components';
 
 function StickySocials() {
   return (
-    // TODO: make socials sticky and scroll while the user scrolls but stop at the navbar and footer
     <SocialsColumn>
-      <SocialBG href='#'>
-        <a href='https://www.facebook.com/' rel='noreferrer' target='_blank'>
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
+      <SocialBG
+        href='https://www.facebook.com/'
+        rel='noreferrer'
+        target='_blank'
+      >
+        <FontAwesomeIcon icon={faFacebook} />
       </SocialBG>
-      <SocialBG href='#'>
-        <a href='https://www.twitter.com/' rel='noreferrer' target='_blank'>
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
+      <SocialBG
+        href='https://www.twitter.com/'
+        rel='noreferrer'
+        target='_blank'
+      >
+        <FontAwesomeIcon icon={faTwitter} />
       </SocialBG>
-      <SocialBG href='#'>
-        <a href='https://www.instagram.com/' rel='noreferrer' target='_blank'>
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
+      <SocialBG
+        href='https://www.instagram.com/'
+        rel='noreferrer'
+        target='_blank'
+      >
+        <FontAwesomeIcon icon={faInstagram} />
       </SocialBG>
     </SocialsColumn>
   );
 }
 
 const SocialsColumn = styled.div`
-  width: 40px;
+  position: fixed;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: 225px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150px;
   justify-content: space-between;
-  position: absolute;
-  left: 50px;
 `;
 
 const SocialBG = styled.a`
@@ -45,7 +52,22 @@ const SocialBG = styled.a`
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  svg {
+    font-size: 40px;
+  }
 `;
 
 export default StickySocials;

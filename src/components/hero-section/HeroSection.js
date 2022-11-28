@@ -4,7 +4,7 @@ import bgImage from './../../assets/imgs/hero-image.png';
 
 function HeroSection() {
   return (
-    // TODO: reference valorant website for button design using ::before and ::after sudo selectors
+    // TODO: make button transition smooth
     <BigImage>
       <MiddleText>
         <p>A 5v5 character-based tactical shooter</p>
@@ -86,14 +86,17 @@ const MainButt = styled.button`
   }
 
   &:hover span {
-    transition: transform 0.5s ease-in-out;
     transform: translateX(-10%) skew(-10deg);
   }
 
-  &:hover p {
+  p {
     position: relative;
     z-index: 2;
-    transition: color 1s;
+    color: #000000;
+    transition: color 0.75s ease-in-out;
+  }
+
+  &:hover p {
     color: #ffffff;
   }
 `;
@@ -117,6 +120,7 @@ const ButtOverlay = styled.span`
   background-color: #3b4339;
   cursor: pointer;
   transform: translateX(-110%) skew(-10deg);
+  transition: all 0.5s ease-in-out;
 `;
 
 export default HeroSection;
