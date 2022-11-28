@@ -48,6 +48,7 @@ const MiddleText = styled.div`
     font-family: 'Bebas Neue', cursive;
     font-size: 200px;
     line-height: normal;
+    text-align: center;
   }
 `;
 
