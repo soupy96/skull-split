@@ -1,19 +1,22 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Logo from '../re-usable/Logo';
 import NavMenu from './NavMenu';
 
 function NavBar() {
   return (
-    // TODO: make svg path bg of play button/link
-    // TODO: try and center text in the play link better. its almost there!
     <NavBarBox>
-      <Logo />
-      <NavMenu />
-      <svg height='75' width='200'>
+      <LogoMenu>
+        <Link to='/'>
+          <Logo />
+        </Link>
+        <NavMenu />
+      </LogoMenu>
+      <svg height='75' width='205'>
         <PlayNow href='#'>
           <path
-            d='M10 0 L170 0 L200 30 L200 75 L40 75 L10 45 Z'
+            d='M10 5 L170 5 L200 30 L200 75 L40 75 L10 45 Z'
             fill='#f0ff00'
           />
           <text
@@ -36,13 +39,34 @@ const NavBarBox = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 30px 0px;
+  justify-content: space-between;
+  padding: 30px 50px;
   height: 100px;
 `;
 
-const LogoNav = styled(Logo)``;
+const LogoMenu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 470px;
+`;
 
-const PlayNow = styled.a``;
+const PlayNow = styled.a`
+  path,
+  text {
+    transition: transform 0.25s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &:hover path {
+    fill: #cedb00;
+    transform: translateY(-5px);
+  }
+
+  &:hover text {
+    transform: translateY(-5px);
+    fill: #000000;
+  }
+`;
 
 export default NavBar;

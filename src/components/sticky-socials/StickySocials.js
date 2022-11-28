@@ -11,17 +11,17 @@ function StickySocials() {
     // TODO: make socials sticky and scroll while the user scrolls but stop at the navbar and footer
     <SocialsColumn>
       <SocialBG href='#'>
-        <a href='https://www.facebook.com/' target='_blank'>
+        <a href='https://www.facebook.com/' rel='noreferrer' target='_blank'>
           <FontAwesomeIcon icon={faFacebook} />
         </a>
       </SocialBG>
       <SocialBG href='#'>
-        <a href='https://www.twitter.com/' target='_blank'>
+        <a href='https://www.twitter.com/' rel='noreferrer' target='_blank'>
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </SocialBG>
       <SocialBG href='#'>
-        <a href='https://www.instagram.com/' target='_blank'>
+        <a href='https://www.instagram.com/' rel='noreferrer' target='_blank'>
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </SocialBG>

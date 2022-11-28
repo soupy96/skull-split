@@ -40,11 +40,19 @@ const Nav = styled.nav`
 
 const NavUl = styled.ul`
   list-style-type: none;
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  display: none;
+  width: 300px;
+
+  a {
+    font-size: 35px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 `;
 
 const MenuCircle = styled.div`
@@ -53,7 +61,8 @@ const MenuCircle = styled.div`
   width: 65px;
   height: 65px;
   position: relative;
-  /* animation: ${rotate} 0.5s linear infinite; */
+  animation: ${rotate} 0.5s linear infinite;
+  display: none;
 
   &:before {
     content: '';
