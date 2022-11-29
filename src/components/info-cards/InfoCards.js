@@ -3,8 +3,6 @@ import NestedRoot from '../re-usable/NestedRoot';
 
 function InfoCards() {
   return (
-    // TODO: refine the overlay
-    // TODO: Make the size of the cards closer to the design, more rectangle than square
     <NestedRoot>
       <Root>
         <LeftDropShadow>
