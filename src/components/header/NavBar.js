@@ -74,7 +74,7 @@ const PlayNow = styled.a`
 
   &:hover text {
     transform: translateY(-5px);
-    fill: #000000;
+    text-decoration: underline;
   }
 `;
 
