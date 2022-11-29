@@ -6,12 +6,14 @@ function Updates() {
   return (
     <Root>
       <NestedRoot>
-        <h3>Updates</h3>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <UpdatesTitle>Updates</UpdatesTitle>
+        <GridContainer>
+          <div>Testing 123</div>
+          <div>Testing 123</div>
+          <div>Testing 123</div>
+          <div>Testing 123</div>
+          <div>Testing 123</div>
+        </GridContainer>
       </NestedRoot>
     </Root>
   );
@@ -19,6 +21,18 @@ function Updates() {
 
 const Root = styled.div`
   background-color: #ffffff;
+`;
+
+const UpdatesTitle = styled.h3`
+  font-size: 50px;
+  line-height: normal;
+  text-transform: capitalize;
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 330px;
 `;
 
 export default Updates;
