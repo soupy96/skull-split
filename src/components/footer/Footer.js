@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { NestedStyle } from './../re-usable/NestedRoot';
 import Logo from '../re-usable/Logo';
@@ -9,7 +10,9 @@ function Footer() {
   return (
     <Root>
       <NestedRootFooter>
-        <Logo />
+        <Link to='/'>
+          <Logo />
+        </Link>
         <Copyright>
           &copy; 2022 Skull Games Inc, Skull Split, and any associated logos are
           trademarks, service marks, and/or registered trademarks of Skull
