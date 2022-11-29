@@ -8,21 +8,27 @@ function InfoCards() {
     <NestedRoot>
       <Root>
         <LeftDropShadow>
-          <p>Lorem ipsum dolor sit amet</p>
-          <p>Ut sit amet pretuim ex</p>
-          <GreenText>$100,000,000!</GreenText>
+          <SmallText>Lorem ipsum dolor sit amet</SmallText>
+          <MiddleText>Ut sit amet pretuim ex</MiddleText>
+          <LargeText>
+            <GreenText>$100,000,000!</GreenText>
+          </LargeText>
         </LeftDropShadow>
         <MiddleDropShadow>
-          <p>Lorem ipsum</p>
-          <GreenText>Rutrum odio</GreenText>
-          <p>Sit amet purus</p>
+          <LargeText>Lorem ipsum</LargeText>
+          <MiddleText>
+            <GreenText>Rutrum odio</GreenText>
+          </MiddleText>
+          <SmallText>Sit amet purus</SmallText>
         </MiddleDropShadow>
         <RightDropShadow>
-          <p>Vestibulum</p>
-          <p>DOLOR ACCUMSAN LAOREET Dolor accumsan laoreet</p>
-          <GreenText>
-            Vestibulum ultrices magna a pellentesque maximus egestat at nibh
-          </GreenText>
+          <LargeText>Vestibulum</LargeText>
+          <MiddleText>Dolor accumsan laoreet</MiddleText>
+          <SmallText>
+            <GreenText>
+              Vestibulum ultrices magna a pellentesque maximus egestat at nibh
+            </GreenText>
+          </SmallText>
         </RightDropShadow>
       </Root>
     </NestedRoot>
@@ -40,28 +46,63 @@ const Root = styled.div`
 `;
 
 const Card = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 450px;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+  text-transform: uppercase;
 `;
 
 const LeftDropShadow = styled(Card)`
-  -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 `;
 
 const MiddleDropShadow = styled(Card)`
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 `;
 
 const RightDropShadow = styled(Card)`
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+`;
+
+const SmallText = styled.p`
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+
+  p {
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+  }
+`;
+const MiddleText = styled.p`
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  p {
+    font-size: 50px;
+    text-align: center;
+  }
+`;
+const LargeText = styled.p`
+  line-height: 75px;
+  font-size: 75px;
+  text-align: center;
+
+  p {
+    font-size: 75px;
+    line-height: 75px;
+    text-align: center;
+  }
 `;
 
 const GreenText = styled.p`

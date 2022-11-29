@@ -3,7 +3,8 @@ import NestedRoot from '../re-usable/NestedRoot';
 
 function GameInfo() {
   return (
-    // TODO: redraw the svg so that its longer horizontally
+    // TODO: look into making svgs responsive
+    // TODO: center text in between boxes below and hero img above
     <MainInfo>
       <NestedRoot>
         <InnerRoot>
@@ -80,12 +81,12 @@ const InnerRoot = styled.div`
 `;
 
 const BodySVG = styled.svg`
-  margin: 75px 0px;
+  margin: 0px 0px 75px 0px;
 `;
 
 const InfoText = styled.div`
   > * {
-    margin: 30px;
+    margin: 30px 0px;
   }
 `;
 
