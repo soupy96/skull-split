@@ -6,34 +6,36 @@ function GameInfo() {
     // TODO: redraw the svg so that its longer horizontally
     <MainInfo>
       <NestedRoot>
-        <svg height='75' width='505'>
-          <path
-            d='M10 5 L170 5 L200 30 L200 75 L40 75 L10 45 Z'
-            fill='#f0ff00'
-          />
-          <text
-            x='100'
-            y='37.5'
-            fill='#000000'
-            dominant-baseline='middle'
-            text-anchor='middle'
-          >
-            <BlackText>Lorem Ipsum 2077/08/14</BlackText>
-          </text>
-        </svg>
-        <div>
-          <p>Ut at eleifend mi.</p>
-          <YellowText>Lorem ipsum dolor sit amet, consectetur</YellowText>
-          <p>
-            Hasellus vestibulum pellentesque lacinia. Ut eget faucibus nisi, nec
-            mattis arcu. Etiam tincidunt leo leo, ut pretium massa mattis id.
-            Donec dictum sem vel condimentum accumsan.
-          </p>
-          <p>
-            Nulla sagittis lacinia odio, sed vestibulum ex laoreet ac. In
-            tristique, sem ut tempus mattis
-          </p>
-        </div>
+        <InnerRoot>
+          <BodySVG height='75' width='505'>
+            <path
+              d='M10 5 L475 5 L505 30 L505 75 L40 75 L10 45 Z'
+              fill='#f0ff00'
+            />
+            <text
+              x='252.5'
+              y='40'
+              fill='#000000'
+              dominant-baseline='middle'
+              text-anchor='middle'
+            >
+              Lorem Ipsum 2077/08/14
+            </text>
+          </BodySVG>
+          <InfoText>
+            <MediumText>Ut at eleifend mi.</MediumText>
+            <YellowText>Lorem ipsum dolor sit amet, consectetur</YellowText>
+            <p>
+              Hasellus vestibulum pellentesque lacinia. Ut eget faucibus nisi,
+              nec mattis arcu. Etiam tincidunt leo leo, ut pretium massa mattis
+              id. Donec dictum sem vel condimentum accumsan.
+            </p>
+            <p>
+              Nulla sagittis lacinia odio, sed vestibulum ex laoreet ac. In
+              tristique, sem ut tempus mattis
+            </p>
+          </InfoText>
+        </InnerRoot>
       </NestedRoot>
     </MainInfo>
   );
@@ -64,15 +66,37 @@ const MainInfo = styled.div`
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a4239",endColorstr="#222721",GradientType=1);
   background-position: 0px -150px;
-  padding: 200px 0px;
+  padding: 250px 0px;
+
+  text {
+    font-size: 55px;
+    line-height: normal;
+  }
 `;
 
-const BlackText = styled.h2`
-  color: #000000;
+const InnerRoot = styled.div`
+  width: 50%;
+  margin: auto;
+`;
+
+const BodySVG = styled.svg`
+  margin: 75px 0px;
+`;
+
+const InfoText = styled.div`
+  > * {
+    margin: 30px;
+  }
+`;
+
+const MediumText = styled.p`
+  font-size: 60px;
+  line-height: 0px;
 `;
 
 const YellowText = styled.p`
   color: #f0ff00;
+  font-size: 35px;
 `;
 
 export default GameInfo;
