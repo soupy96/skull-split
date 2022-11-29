@@ -16,8 +16,8 @@ function GameInfo() {
               x='252.5'
               y='40'
               fill='#000000'
-              dominant-baseline='middle'
-              text-anchor='middle'
+              dominantBaseline='middle'
+              textAnchor='middle'
             >
               Lorem Ipsum 2077/08/14
             </text>
@@ -66,7 +66,7 @@ const MainInfo = styled.div`
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a4239",endColorstr="#222721",GradientType=1);
   background-position: 0px -150px;
-  padding: 250px 0px;
+  padding: 200px 0px;
 
   text {
     font-size: 55px;

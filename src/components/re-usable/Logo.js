@@ -1,7 +1,7 @@
 import skullLogo from './../../assets/imgs/skull.png';
 
-function Logo() {
-  return <img alt='Skull Split Logo' src={skullLogo} />;
+function Logo({ className }) {
+  return <img className={className} alt='Skull Split Logo' src={skullLogo} />;
 }
 
 export default Logo;

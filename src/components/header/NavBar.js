@@ -9,7 +9,7 @@ function NavBar() {
     <NavBarBox>
       <LogoMenu>
         <Link to='/'>
-          <Logo />
+          <HoverLogo />
         </Link>
         <NavMenu />
       </LogoMenu>
@@ -23,8 +23,8 @@ function NavBar() {
             x='100'
             y='37.5'
             fill='#000000'
-            dominant-baseline='middle'
-            text-anchor='middle'
+            dominantBaseline='middle'
+            textAnchor='middle'
           >
             Play Now
           </text>
@@ -49,6 +49,15 @@ const LogoMenu = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 470px;
+`;
+
+const HoverLogo = styled(Logo)`
+  filter: none;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 2px #ffffff);
+  }
 `;
 
 const PlayNow = styled.a`

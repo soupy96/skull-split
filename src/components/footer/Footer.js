@@ -11,7 +11,7 @@ function Footer() {
     <Root>
       <NestedRootFooter>
         <Link to='/'>
-          <Logo />
+          <HoverLogo />
         </Link>
         <Copyright>
           &copy; 2022 Skull Games Inc, Skull Split, and any associated logos are
@@ -39,6 +39,15 @@ const NestedRootFooter = styled(NestedStyle)`
   align-items: center;
   width: 35%;
   height: 100%;
+`;
+
+const HoverLogo = styled(Logo)`
+  filter: none;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 2px #ffffff);
+  }
 `;
 
 const Copyright = styled.div`
