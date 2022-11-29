@@ -11,6 +11,7 @@ import NoPage from './pages/NoPage';
 
 function App() {
   return (
+    // TODO: try and convert most pxs to responsive values
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
