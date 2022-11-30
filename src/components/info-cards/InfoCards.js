@@ -1,11 +1,20 @@
 import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import NestedRoot from '../re-usable/NestedRoot';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper';
 
 function InfoCards() {
   return (
-    // TODO: make three squares into a slider rather than side by side
+    // TODO: figure out why font-sizes are taking responsive sizes
+    // TODO: figure out solution for smaller phone sizes to 320px
     <NestedRoot>
       <Root>
+        {/* Appears on the desktop */}
         <LeftDropShadow>
           <SmallText>Lorem ipsum dolor sit amet</SmallText>
           <MiddleText>Ut sit amet pretuim ex</MiddleText>
@@ -29,6 +38,36 @@ function InfoCards() {
             </GreenText>
           </SmallText>
         </RightDropShadow>
+        {/* Appears on mobile/smaller screen sizes */}
+        <SwiperCustom
+          navigation={true}
+          modules={[Navigation]}
+          className='mySwiper'
+        >
+          <SwiperSlideCustom>
+            <SmallText>Lorem ipsum dolor sit amet</SmallText>
+            <MiddleText>Ut sit amet pretuim ex</MiddleText>
+            <LargeText>
+              <GreenText>$100,000,000!</GreenText>
+            </LargeText>
+          </SwiperSlideCustom>
+          <SwiperSlideCustom>
+            <LargeText>Lorem ipsum</LargeText>
+            <MiddleText>
+              <GreenText>Rutrum odio</GreenText>
+            </MiddleText>
+            <SmallText>Sit amet purus</SmallText>
+          </SwiperSlideCustom>
+          <SwiperSlideCustom>
+            <LargeText>Vestibulum</LargeText>
+            <MiddleText>Dolor accumsan laoreet</MiddleText>
+            <SmallText>
+              <GreenText>
+                Vestibulum ultrices magna a pellentesque maximus egestat at nibh
+              </GreenText>
+            </SmallText>
+          </SwiperSlideCustom>
+        </SwiperCustom>
       </Root>
     </NestedRoot>
   );
@@ -43,15 +82,10 @@ const Root = styled.div`
   margin-top: -125px;
   text-align: center;
   flex-wrap: wrap;
-
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
-  }
 `;
 
 const Card = styled.div`
   width: 30%;
-  /* width: 400px; */
   height: 300px;
   display: flex;
   justify-content: center;
@@ -59,6 +93,34 @@ const Card = styled.div`
   align-items: center;
   background-color: #ffffff;
   text-transform: uppercase;
+  padding: 20px;
+
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+`;
+
+const SwiperCustom = styled(Swiper)`
+  display: none;
+
+  @media only screen and (max-width: 1200px) {
+    display: flex;
+    height: 300px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+    background-color: #ffffff;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #88c228;
+    }
+  }
+`;
+
+const SwiperSlideCustom = styled(SwiperSlide)`
+  display: flex;
+  flex-direction: column;
 `;
 
 const LeftDropShadow = styled(Card)`
@@ -77,36 +139,56 @@ const RightDropShadow = styled(Card)`
 `;
 
 const SmallText = styled.p`
-  font-size: 1.25vw;
-  line-height: 1.75vw;
+  font-size: 30px;
+  line-height: normal;
   text-align: center;
 
   p {
-    width: 50%;
+    width: 100%;
     margin: auto;
-    font-size: 1.25vw;
+    font-size: 30px;
     text-align: center;
   }
+
+  @media only screen and (max-width: 1450px) {
+    p {
+      font-size: 25px;
+    }
+  }
 `;
+
 const MiddleText = styled.p`
-  font-size: 2vw;
-  line-height: 2.25vw;
+  font-size: 45px;
+  line-height: normal;
   text-align: center;
 
   p {
-    font-size: 2.5vw;
+    font-size: 45px;
     text-align: center;
   }
+
+  @media only screen and (max-width: 1450px) {
+    p {
+      font-size: 35px;
+    }
+  }
 `;
+
 const LargeText = styled.p`
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: 80px;
+  line-height: 70px;
   text-align: center;
 
   p {
-    font-size: 4vw;
-    line-height: 4vw;
+    font-size: 80px;
+    line-height: 70px;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    p {
+      font-size: 65px;
+    }
   }
 `;
 

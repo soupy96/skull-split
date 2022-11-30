@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage';
 function App() {
   return (
     // TODO: try and convert most pxs to responsive values
+    // TODO: load in content on webpage while the user scrolls
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
