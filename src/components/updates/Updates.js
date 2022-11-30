@@ -16,36 +16,33 @@ function Updates() {
           <UpdatesTitle>Updates</UpdatesTitle>
           <GridContainer>
             <GridBox1>
-              <p>
-                Phasellus ipsum nisl, convallis nec dapibus tincidunt,
-                Suspendisse gravida porttitor risus a lobortis. In finibus
-                mauris a
-              </p>
+              <ArticlePreviewText>
+                Phasellus ipsum nisl, convallis nec
+              </ArticlePreviewText>
               <p>38 Minutes Ago</p>
             </GridBox1>
             <GridBox2>
-              <p>
-                Suspendisse accumsan et ante sed Duis blandit sapien a blandit
-                vestibulu
-              </p>
+              <ArticlePreviewText>
+                Suspendisse accumsan et ante sed
+              </ArticlePreviewText>
               <p>17 Minutes Ago</p>
             </GridBox2>
             <GridBox3>
-              <p>
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum
-              </p>
+              <ArticlePreviewText>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </ArticlePreviewText>
               <p>46 Minutes Ago</p>
             </GridBox3>
             <GridBox4>
-              <p>
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum
-              </p>
+              <ArticlePreviewText>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </ArticlePreviewText>
               <p>6 Minutes Ago</p>
             </GridBox4>
             <GridBox5>
-              <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+              <ArticlePreviewText>
+                Lorem Ipsum Lorem Ipsum Lorem
+              </ArticlePreviewText>
               <p>29 Minutes Ago</p>
             </GridBox5>
           </GridContainer>
@@ -74,6 +71,7 @@ const GridContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 330px;
   grid-gap: 40px;
+  width: 100%;
 
   div {
     border-radius: 15px;
@@ -87,9 +85,22 @@ const GridContainer = styled.div`
     background-repeat: no-repeat;
     color: #ffffff;
   }
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 100%;
+      height: 400px;
+    }
+  }
 `;
 
 const GridBox1 = styled.div`
+  width: 100%;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   background: linear-gradient(
@@ -109,6 +120,7 @@ const GridBox1 = styled.div`
 `;
 
 const GridBox2 = styled.div`
+  width: 100%;
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   background: linear-gradient(
@@ -128,6 +140,7 @@ const GridBox2 = styled.div`
 `;
 
 const GridBox3 = styled.div`
+  width: 100%;
   grid-column: 4 / 5;
   grid-row: 1 / 3;
   background: linear-gradient(
@@ -147,6 +160,7 @@ const GridBox3 = styled.div`
 `;
 
 const GridBox4 = styled.div`
+  width: 100%;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   background: linear-gradient(
@@ -166,6 +180,7 @@ const GridBox4 = styled.div`
 `;
 
 const GridBox5 = styled.div`
+  width: 100%;
   grid-column: 2 / 4;
   grid-row: 2 / 3;
   background: linear-gradient(
@@ -181,6 +196,18 @@ const GridBox5 = styled.div`
 
   &:hover p {
     transform: translateY(-10px);
+  }
+`;
+
+const ArticlePreviewText = styled.p`
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media only screen and (max-width: 1130px) {
+    width: 125px;
   }
 `;
 
