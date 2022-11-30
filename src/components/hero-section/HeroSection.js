@@ -41,6 +41,7 @@ const MiddleText = styled.div`
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  text-align: center;
 
   p {
     font-size: 35px;

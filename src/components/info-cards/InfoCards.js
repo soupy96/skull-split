@@ -41,10 +41,14 @@ const Root = styled.div`
   padding: 50px 0px;
   margin-top: -125px;
   text-align: center;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 const Card = styled.div`
-  width: 450px;
+  width: 30%;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -70,35 +74,35 @@ const RightDropShadow = styled(Card)`
 `;
 
 const SmallText = styled.p`
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 1.25vw;
+  line-height: 1.75vw;
   text-align: center;
 
   p {
     width: 50%;
     margin: auto;
-    font-size: 25px;
+    font-size: 1.25vw;
     text-align: center;
   }
 `;
 const MiddleText = styled.p`
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2vw;
+  line-height: 2.25vw;
   text-align: center;
 
   p {
-    font-size: 50px;
+    font-size: 2.5vw;
     text-align: center;
   }
 `;
 const LargeText = styled.p`
-  line-height: 75px;
-  font-size: 75px;
+  font-size: 4vw;
+  line-height: 4vw;
   text-align: center;
 
   p {
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 4vw;
+    line-height: 4vw;
     text-align: center;
   }
 `;
