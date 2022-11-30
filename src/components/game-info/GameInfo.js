@@ -78,6 +78,14 @@ const MainInfo = styled.div`
 const InnerRoot = styled.div`
   width: 50%;
   margin: auto;
+
+  @media only screen and (max-width: 1000px) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const BodySVG = styled.svg`
@@ -92,7 +100,7 @@ const InfoText = styled.div`
 
 const MediumText = styled.p`
   font-size: 60px;
-  line-height: 0px;
+  line-height: 50px;
 `;
 
 const YellowText = styled.p`
