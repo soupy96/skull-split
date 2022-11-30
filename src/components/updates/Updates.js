@@ -10,39 +10,30 @@ import gridImg5 from './../../assets/imgs/grid-5.jpg';
 
 function Updates() {
   return (
+    // TODO: make grid 2 column on smaller screen rather than 3
     <Root>
       <NestedRoot>
         <InnerRoot>
           <UpdatesTitle>Updates</UpdatesTitle>
           <GridContainer>
             <GridBox1>
-              <ArticlePreviewText>
-                Phasellus ipsum nisl, convallis nec
-              </ArticlePreviewText>
+              <p>Phasellus ipsum nisl, convallis nec</p>
               <p>38 Minutes Ago</p>
             </GridBox1>
             <GridBox2>
-              <ArticlePreviewText>
-                Suspendisse accumsan et ante sed
-              </ArticlePreviewText>
+              <p>Suspendisse accumsan et ante sed</p>
               <p>17 Minutes Ago</p>
             </GridBox2>
             <GridBox3>
-              <ArticlePreviewText>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </ArticlePreviewText>
+              <p>Lorem Ipsum Lorem Ipsum Lorem</p>
               <p>46 Minutes Ago</p>
             </GridBox3>
             <GridBox4>
-              <ArticlePreviewText>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </ArticlePreviewText>
+              <p>Lorem Ipsum Lorem Ipsum Lorem</p>
               <p>6 Minutes Ago</p>
             </GridBox4>
             <GridBox5>
-              <ArticlePreviewText>
-                Lorem Ipsum Lorem Ipsum Lorem
-              </ArticlePreviewText>
+              <p>Lorem Ipsum Lorem Ipsum Lorem</p>
               <p>29 Minutes Ago</p>
             </GridBox5>
           </GridContainer>
@@ -86,6 +77,10 @@ const GridContainer = styled.div`
     color: #ffffff;
   }
 
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -117,6 +112,11 @@ const GridBox1 = styled.div`
   &:hover p {
     transform: translateY(-10px);
   }
+
+  @media only screen and (max-width: 1200px) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 `;
 
 const GridBox2 = styled.div`
@@ -136,6 +136,11 @@ const GridBox2 = styled.div`
 
   &:hover p {
     transform: translateY(-10px);
+  }
+
+  @media only screen and (max-width: 1200px) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 `;
 
@@ -157,6 +162,11 @@ const GridBox3 = styled.div`
   &:hover p {
     transform: translateY(-10px);
   }
+
+  @media only screen and (max-width: 1200px) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 `;
 
 const GridBox4 = styled.div`
@@ -176,6 +186,11 @@ const GridBox4 = styled.div`
 
   &:hover p {
     transform: translateY(-10px);
+  }
+
+  @media only screen and (max-width: 1200px) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 `;
 
@@ -197,17 +212,10 @@ const GridBox5 = styled.div`
   &:hover p {
     transform: translateY(-10px);
   }
-`;
 
-const ArticlePreviewText = styled.p`
-  width: 200px;
-  height: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  @media only screen and (max-width: 1130px) {
-    width: 125px;
+  @media only screen and (max-width: 1200px) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
 `;
 

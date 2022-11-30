@@ -3,6 +3,7 @@ import NestedRoot from '../re-usable/NestedRoot';
 
 function InfoCards() {
   return (
+    // TODO: make three squares into a slider rather than side by side
     <NestedRoot>
       <Root>
         <LeftDropShadow>
@@ -41,14 +42,16 @@ const Root = styled.div`
   padding: 50px 0px;
   margin-top: -125px;
   text-align: center;
+  flex-wrap: wrap;
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
   }
 `;
 
 const Card = styled.div`
   width: 30%;
+  /* width: 400px; */
   height: 300px;
   display: flex;
   justify-content: center;
