@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { NestedStyle } from './../re-usable/NestedRoot';
 import Logo from '../re-usable/Logo';
+import FooterSocials from './FooterSocials';
 import FooterMenu from './FooterMenu';
 import ESRB from './ESRB';
 
@@ -18,6 +19,7 @@ function Footer() {
           trademarks, service marks, and/or registered trademarks of Skull
           Games, Inc.
         </Copyright>
+        <FooterSocials />
         <FooterMenu />
         <ESRB />
       </NestedRootFooter>
@@ -30,6 +32,11 @@ const Root = styled.div`
   color: #ffffff;
   width: 100%;
   height: 500px;
+
+  @media only screen and (max-width: 900px) {
+    height: 750px;
+    padding: 50px 0px;
+  }
 `;
 
 const NestedRootFooter = styled(NestedStyle)`
@@ -37,7 +44,7 @@ const NestedRootFooter = styled(NestedStyle)`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 35%;
+  width: 80%;
   height: 100%;
 `;
 

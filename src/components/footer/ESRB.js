@@ -21,7 +21,6 @@ const Root = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 28%;
   background-color: #3a3a3a;
   border-radius: 10px;
   padding: 10px;
@@ -31,6 +30,7 @@ const ESRBList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0px 10px;
 
   p {
     font-size: 20px;
