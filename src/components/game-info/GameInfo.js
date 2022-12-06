@@ -8,9 +8,9 @@ function GameInfo() {
     <MainInfo>
       <NestedRoot>
         <InnerRoot>
-          <BodySVG height='75' width='505'>
+          {/* <BodySVG height='75' width='505'>
             <path
-              d='M10 5 L475 5 L505 30 L505 75 L40 75 L10 45 Z'
+              d='M0 0 L475 0 L505 30 L505 75 L40 75 L0 45 Z'
               fill='#f0ff00'
             />
             <text
@@ -22,7 +22,8 @@ function GameInfo() {
             >
               Lorem Ipsum 2077/08/14
             </text>
-          </BodySVG>
+          </BodySVG> */}
+          <Title>Lorem Ipsum 2077/08/14</Title>
           <InfoText>
             <MediumText>Ut at eleifend mi.</MediumText>
             <YellowText>Lorem ipsum dolor sit amet, consectetur</YellowText>
@@ -79,17 +80,23 @@ const InnerRoot = styled.div`
   width: 50%;
   margin: auto;
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1200px) {
     width: 75%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     width: 100%;
   }
 `;
 
-const BodySVG = styled.svg`
-  margin: 0px 0px 75px 0px;
+// const BodySVG = styled.svg`
+//   margin: 0px 0px 75px 0px;
+// `;
+
+const Title = styled.h3`
+  font-size: 60px;
+  color: #f0ff00;
+  line-height: 50px;
 `;
 
 const InfoText = styled.div`
