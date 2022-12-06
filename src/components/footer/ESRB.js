@@ -5,7 +5,13 @@ import ESRBImg from './../../assets/imgs/na-esrb.png';
 function ESRB() {
   return (
     <Root>
-      <img alt='ESRB Teen Rating' src={ESRBImg} />
+      <a
+        href='https://www.esrb.org/ratings-guide/'
+        target='_blank'
+        rel='nofollow'
+      >
+        <img alt='ESRB Teen Rating' src={ESRBImg} />
+      </a>
       <ESRBList>
         <p>Blood</p>
         <p>Language</p>
