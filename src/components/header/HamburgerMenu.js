@@ -5,15 +5,15 @@ import { useState } from 'react';
 
 function HamburgerMenu() {
   // TODO: fix issue where menu closes on second menu item click
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuOpenHandler = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const menuOpenHandler = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <HamburgerMenuBox>
-      <Menu right noOverlay isOpen={isMenuOpen}>
+      {/* <Menu right noOverlay isOpen={isMenuOpen}>
         <Link to='/' onClick={menuOpenHandler}>
           HOME
         </Link>
@@ -26,6 +26,12 @@ function HamburgerMenu() {
         <a href='#' onClick={menuOpenHandler}>
           PLAY NOW
         </a>
+      </Menu> */}
+      <Menu right noOverlay>
+        <Link to='/'>HOME</Link>
+        <Link to='/about'>ABOUT</Link>
+        <Link to='/contact'>CONTACT</Link>
+        <a href='#'>PLAY NOW</a>
       </Menu>
     </HamburgerMenuBox>
   );
