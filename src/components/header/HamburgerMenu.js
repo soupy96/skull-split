@@ -4,7 +4,7 @@ import { stack as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 
 function HamburgerMenu() {
-  // TODO: fix issue where menu closes on first menu item click
+  // TODO: fix issue where menu closes on second menu item click
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuOpenHandler = () => {
