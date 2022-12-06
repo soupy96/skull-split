@@ -50,9 +50,17 @@ const MiddleText = styled.div`
 
   h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 200px;
-    line-height: normal;
+    font-size: 9rem;
+    line-height: 200px;
     text-align: center;
+    margin: 50px auto;
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 6rem;
+      line-height: 140px;
+    }
   }
 `;
 
