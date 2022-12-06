@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../re-usable/Logo';
 import NavMenu from './NavMenu';
+import HamburgerMenu from './HamburgerMenu';
 
 function NavBar() {
   return (
@@ -30,6 +31,7 @@ function NavBar() {
           </text>
         </PlayNow>
       </svg>
+      <HamburgerMenu />
     </NavBarBox>
   );
 }
