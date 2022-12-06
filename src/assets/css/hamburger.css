@@ -23,9 +23,18 @@
   width: 24px;
 }
 
+#react-burger-cross-btn {
+  top: 28px !important;
+  left: -33px !important;
+}
+
 /* Color/shape of close button cross */
 .bm-cross {
   background: #f0ff00;
+  width: 7px !important;
+  height: 25px !important;
+  top: 28px !important;
+  left: -33px !important;
 }
 
 /*
