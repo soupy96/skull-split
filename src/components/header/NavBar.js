@@ -42,6 +42,12 @@ const NavBarBox = styled.div`
   justify-content: space-between;
   padding: 30px 50px;
   height: 100px;
+
+  @media only screen and (max-width: 900px) {
+    svg {
+      display: none;
+    }
+  }
 `;
 
 const LogoMenu = styled.div`

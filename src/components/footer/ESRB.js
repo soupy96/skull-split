@@ -8,7 +8,7 @@ function ESRB() {
       <a
         href='https://www.esrb.org/ratings-guide/'
         target='_blank'
-        rel='nofollow'
+        rel='noreferrer'
       >
         <img alt='ESRB Teen Rating' src={ESRBImg} />
       </a>

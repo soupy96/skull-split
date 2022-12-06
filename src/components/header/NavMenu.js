@@ -35,6 +35,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const NavUl = styled.ul`
