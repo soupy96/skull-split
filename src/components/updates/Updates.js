@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 import NestedRoot from '../re-usable/NestedRoot';
 
-import gridImg1 from './../../assets/imgs/grid-1.jpg';
-import gridImg2 from './../../assets/imgs/grid-2.jpg';
-import gridImg3 from './../../assets/imgs/grid-3.jpg';
-import gridImg4 from './../../assets/imgs/grid-4.jpg';
-import gridImg5 from './../../assets/imgs/grid-5.jpg';
+import gridImg1 from './../../assets/imgs/grid-1.webp';
+import gridImg2 from './../../assets/imgs/grid-2.webp';
+import gridImg3 from './../../assets/imgs/grid-3.webp';
+import gridImg4 from './../../assets/imgs/grid-4.webp';
+import gridImg5 from './../../assets/imgs/grid-5.webp';
 
 function Updates() {
   return (

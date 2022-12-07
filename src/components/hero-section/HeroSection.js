@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import NestedRoot from '../re-usable/NestedRoot';
 
-import bgImage from './../../assets/imgs/hero-image.png';
+import bgImage from './../../assets/imgs/hero-image.webp';
 
 function HeroSection() {
   return (
