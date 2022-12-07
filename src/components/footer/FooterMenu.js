@@ -4,15 +4,9 @@ import { Link } from 'react-router-dom';
 function FooterMenu() {
   return (
     <FooterNav>
-      <li>
-        <Link to='/privacy-notice'>Privacy Notice</Link>
-      </li>
-      <li>
-        <Link to='/terms-of-service'>Terms of Service</Link>
-      </li>
-      <li>
-        <Link to='/cookie-preferences'>Cookie Preferences</Link>
-      </li>
+      <Link to='/privacy-notice'>Privacy Notice</Link>
+      <Link to='/terms-of-service'>Terms of Service</Link>
+      <Link to='/cookie-preferences'>Cookie Preferences</Link>
     </FooterNav>
   );
 }
@@ -23,12 +17,9 @@ const FooterNav = styled.div`
   justify-content: space-between;
   flex-direction: row;
 
-  li {
+  a {
     margin: 0px 10px;
     text-align: center;
-  }
-
-  a {
     color: #ffffff;
     text-decoration: none;
     background-color: #181818;
@@ -49,7 +40,7 @@ const FooterNav = styled.div`
     align-items: center;
     padding: 30px 0px;
 
-    li {
+    a {
       margin: 20px 0px;
     }
   }
