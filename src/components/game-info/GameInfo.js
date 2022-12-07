@@ -93,7 +93,7 @@ const InnerRoot = styled.div`
 //   margin: 0px 0px 75px 0px;
 // `;
 
-const Title = styled.h3`
+const Title = styled.h2`
   font-size: 60px;
   color: #f0ff00;
   line-height: 50px;
