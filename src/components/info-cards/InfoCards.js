@@ -10,8 +10,6 @@ import { Navigation } from 'swiper';
 
 function InfoCards() {
   return (
-    // TODO: figure out why font-sizes are taking responsive sizes
-    // TODO: figure out solution for smaller phone sizes to 320px
     <NestedRoot>
       <Root>
         {/* Appears on the desktop */}

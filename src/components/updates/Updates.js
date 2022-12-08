@@ -10,7 +10,6 @@ import gridImg5 from './../../assets/imgs/grid-5.webp';
 
 function Updates() {
   return (
-    // TODO: make grid 2 column on smaller screen rather than 3
     <Root>
       <NestedRoot>
         <InnerRoot>

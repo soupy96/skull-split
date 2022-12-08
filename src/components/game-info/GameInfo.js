@@ -3,26 +3,9 @@ import NestedRoot from '../re-usable/NestedRoot';
 
 function GameInfo() {
   return (
-    // TODO: look into making svgs responsive
-    // TODO: center text in between boxes below and hero img above
     <MainInfo>
       <NestedRoot>
         <InnerRoot>
-          {/* <BodySVG height='75' width='505'>
-            <path
-              d='M0 0 L475 0 L505 30 L505 75 L40 75 L0 45 Z'
-              fill='#f0ff00'
-            />
-            <text
-              x='252.5'
-              y='40'
-              fill='#000000'
-              dominantBaseline='middle'
-              textAnchor='middle'
-            >
-              Lorem Ipsum 2077/08/14
-            </text>
-          </BodySVG> */}
           <Title>Lorem Ipsum 2077/08/14</Title>
           <InfoText>
             <MediumText>Ut at eleifend mi.</MediumText>
