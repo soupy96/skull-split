@@ -1,37 +1,53 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
-// import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function HamburgerMenu() {
-  // TODO: fix issue where menu closes on second menu item click
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // const menuOpenHandler = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
+  useEffect(() => {
+    console.log(isMenuOpen);
+    if (isMenuOpen) {
+      setIsMenuOpen(!isMenuOpen);
+    }
+  }, [isMenuOpen]);
 
   return (
     <HamburgerMenuBox>
-      {/* <Menu right noOverlay isOpen={isMenuOpen}>
-        <Link to='/' onClick={menuOpenHandler}>
+      <Menu right noOverlay isOpen={isMenuOpen}>
+        <Link
+          to='/'
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           HOME
         </Link>
-        <Link to='/about' onClick={menuOpenHandler}>
+        <Link
+          to='/about'
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           ABOUT
         </Link>
-        <Link to='/contact' onClick={menuOpenHandler}>
+        <Link
+          to='/contact'
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           CONTACT
         </Link>
-        <a href='#' onClick={menuOpenHandler}>
+        <Link
+          to='/'
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+          }}
+        >
           PLAY NOW
-        </a>
-      </Menu> */}
-      <Menu right noOverlay>
-        <Link to='/'>HOME</Link>
-        <Link to='/about'>ABOUT</Link>
-        <Link to='/contact'>CONTACT</Link>
-        <Link to='/'>PLAY NOW</Link>
+        </Link>
       </Menu>
     </HamburgerMenuBox>
   );
