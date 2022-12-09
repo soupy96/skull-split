@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function FooterMenu() {
   return (
+    // TODO: figure out why the page doesnt go to the top when i click a link
     <FooterNav>
       <Link to='/privacy-notice'>Privacy Notice</Link>
       <Link to='/terms-of-service'>Terms of Service</Link>
