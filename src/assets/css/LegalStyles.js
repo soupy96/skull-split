@@ -53,3 +53,35 @@ export const ListStyleRomanNum = styled.ul`
   list-style-type: lower-roman !important;
   margin: 0px 30px;
 `;
+
+export const BoxText = styled.p`
+  border: 3px solid #000000;
+  padding: 10px;
+  font-style: oblique;
+  font-weight: bold;
+  margin: 30px 0px !important;
+`;
+
+export const LegalTable = styled.table`
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 16px;
+    border: 1px dotted;
+  }
+`;
+
+export const MobileTableDiv = styled.div`
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
