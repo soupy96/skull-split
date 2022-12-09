@@ -1,7 +1,15 @@
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
-  return <Text>Contact Page in Progress</Text>;
+  return (
+    <div>
+      <Helmet>
+        <title>CoderGuides | Contact</title>
+      </Helmet>
+      <Text>Contact Page in Progress</Text>
+    </div>
+  );
 }
 
 const Text = styled.div`
