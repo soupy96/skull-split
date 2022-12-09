@@ -1,8 +1,13 @@
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import PageTitle from '../components/re-usable/PageTitle';
-import NestedRoot from '../components/re-usable/NestedRoot';
+import PageTitle from '../../components/re-usable/PageTitle';
+import NestedRoot from '../../components/re-usable/NestedRoot';
+
+import {
+  BodyText,
+  GreyLinkWithDots,
+  MainPrivacyPointsBox,
+} from '../../assets/css/LegalStyles';
 
 function PrivacyNotice() {
   return (
@@ -163,46 +168,5 @@ function PrivacyNotice() {
     </NestedRoot>
   );
 }
-
-const BodyText = styled.div`
-  margin-bottom: 50px;
-
-  p,
-  b,
-  li {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    margin: 15px 0px;
-    font-size: 16px;
-    color: #000000;
-  }
-
-  ul {
-    list-style-position: inside;
-    list-style-type: disc;
-  }
-
-  hr {
-    margin: 30px 0px;
-  }
-`;
-
-const GreyLinkWithDots = styled.a`
-  color: #808080;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  margin: 15px 0px;
-  font-size: 16px;
-  border-bottom: dotted 3px #808080;
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: none;
-  }
-`;
-
-const MainPrivacyPointsBox = styled.ol`
-  margin: 0px 30px;
-`;
 
 export default PrivacyNotice;
