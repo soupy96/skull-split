@@ -13,6 +13,12 @@ const MainPageTitle = styled.h1`
   width: 100%;
   margin: 50px 0px;
   padding-bottom: 25px;
+  word-break: break-word;
+
+  @media only screen and (max-width: 750px) {
+    font-size: 100px;
+    line-height: 75px;
+  }
 `;
 
 export default PageTitle;
