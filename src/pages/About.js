@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 function About() {
-  return <Text>About Page in Progress</Text>;
+  return (
+    <div>
+      <Text>About Page in Progress</Text>
+    </div>
+  );
 }
 
 const Text = styled.div`

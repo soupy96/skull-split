@@ -7,7 +7,6 @@ function HamburgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    console.log(isMenuOpen);
     if (isMenuOpen) {
       setIsMenuOpen(!isMenuOpen);
     }
