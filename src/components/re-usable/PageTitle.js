@@ -7,11 +7,12 @@ function PageTitle(props) {
 const MainPageTitle = styled.h1`
   color: #000000;
   font-size: 150px;
-  line-height: normal;
+  line-height: 120px;
   border-bottom: 5px solid #000000;
   text-transform: uppercase;
   width: 100%;
   margin: 50px 0px;
+  padding-bottom: 25px;
 `;
 
 export default PageTitle;

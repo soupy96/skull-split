@@ -9,6 +9,7 @@
   font-family: 'Teko', sans-serif;
   font-size: 25px;
   line-height: 30px;
+  scroll-behavior: smooth;
 }
 
 a {
