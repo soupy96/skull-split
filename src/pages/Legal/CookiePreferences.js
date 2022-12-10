@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import NestedRoot from '../../components/re-usable/NestedRoot';
+import { NestedRootOther } from '../../components/re-usable/NestedRoot';
 import PageTitle from '../../components/re-usable/PageTitle';
 
 import {
@@ -13,7 +13,7 @@ import {
 
 function CookiePreferences() {
   return (
-    <NestedRoot>
+    <NestedRootOther>
       <Helmet>
         <title>Skull Split | Cookie Preferences</title>
       </Helmet>
@@ -146,7 +146,7 @@ function CookiePreferences() {
           </LegalTable>
         </MobileTableDiv>
       </BodyText>
-    </NestedRoot>
+    </NestedRootOther>
   );
 }
 

@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 
 import PageTitle from '../../components/re-usable/PageTitle';
-import NestedRoot from '../../components/re-usable/NestedRoot';
+import { NestedRootOther } from '../../components/re-usable/NestedRoot';
 
 import {
   BodyText,
@@ -12,7 +12,7 @@ import {
 function PrivacyNotice() {
   return (
     // TODO: have the text styles reusable in all pages except the landing page
-    <NestedRoot>
+    <NestedRootOther>
       <Helmet>
         <title>Skull Split | Privacy Notice</title>
       </Helmet>
@@ -165,7 +165,7 @@ function PrivacyNotice() {
           </li>
         </MainPrivacyPointsBox>
       </BodyText>
-    </NestedRoot>
+    </NestedRootOther>
   );
 }
 

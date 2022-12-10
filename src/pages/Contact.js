@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import NestedRoot from '../components/re-usable/NestedRoot';
+import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
 
 import { BodyText } from '../components/re-usable/styles/LegalStyles';
@@ -12,7 +12,7 @@ import {
 
 function Contact() {
   return (
-    <NestedRoot>
+    <NestedRootOther>
       <Helmet>
         <title>CoderGuides | Contact</title>
       </Helmet>
@@ -23,7 +23,7 @@ function Contact() {
           <ContactForm></ContactForm>
         </TwoBoxRow>
       </BodyText>
-    </NestedRoot>
+    </NestedRootOther>
   );
 }
 

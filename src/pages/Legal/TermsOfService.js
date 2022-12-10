@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import NestedRoot from '../../components/re-usable/NestedRoot';
+import { NestedRootOther } from '../../components/re-usable/NestedRoot';
 import PageTitle from '../../components/re-usable/PageTitle';
 
 import {
@@ -12,7 +12,7 @@ import {
 
 function TermsOfService() {
   return (
-    <NestedRoot>
+    <NestedRootOther>
       <Helmet>
         <title>Skull Split | Terms Of Service</title>
       </Helmet>
@@ -120,7 +120,7 @@ function TermsOfService() {
           </b>
         </UpperText>
       </BodyText>
-    </NestedRoot>
+    </NestedRootOther>
   );
 }
 

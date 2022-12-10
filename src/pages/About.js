@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import NestedRoot from '../components/re-usable/NestedRoot';
+import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
 
 import CompanyBuilding from '../assets/imgs/company-building.jpg';
@@ -25,7 +25,7 @@ function About() {
   return (
     // TODO: make sure imgs are proper size and in webp format
     // TODO: replace break tags with a margin to better space stuff out
-    <NestedRoot>
+    <NestedRootOther>
       <Helmet>
         <title>Skull Split | About</title>
       </Helmet>
@@ -82,7 +82,7 @@ function About() {
           </BGImageTextBox>
         </BGImage>
       </BodyText>
-    </NestedRoot>
+    </NestedRootOther>
   );
 }
 
