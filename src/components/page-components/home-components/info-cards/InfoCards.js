@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import NestedRoot from '../re-usable/NestedRoot';
+import NestedRoot from '../../../re-usable/NestedRoot';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
