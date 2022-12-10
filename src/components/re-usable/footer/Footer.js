@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { NestedStyle } from './../re-usable/NestedRoot';
-import Logo from '../re-usable/Logo';
+import { NestedStyle } from './../NestedRoot';
+import Logo from '../Logo';
 import FooterSocials from './FooterSocials';
 import FooterMenu from './FooterMenu';
 import ESRB from './ESRB';

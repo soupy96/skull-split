@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import Logo from '../re-usable/Logo';
+import Logo from '../Logo';
 import NavMenu from './NavMenu';
 import HamburgerMenu from './HamburgerMenu';
 
@@ -44,6 +44,7 @@ const NavBarBox = styled.div`
   justify-content: space-between;
   padding: 30px 50px;
   height: 100px;
+  position: fixed;
 
   @media only screen and (max-width: 900px) {
     svg {
