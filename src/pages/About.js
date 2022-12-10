@@ -11,8 +11,8 @@ import { BodyText } from '../components/re-usable/styles/LegalStyles';
 
 function About() {
   return (
-    // TODO: make sure imgs are proper size and in webp format
     // TODO: replace break tags with a margin to better space stuff out
+    // TOOD: make mobile friendly
     <NestedRootOther>
       <Helmet>
         <title>Skull Split | About</title>

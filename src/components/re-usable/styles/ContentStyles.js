@@ -121,6 +121,8 @@ export const BGImageTextBox = styled.div`
   width: 100%;
   height: calc(100% - 60px);
   margin: 30px !important;
+  padding: 100px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
 `;
 

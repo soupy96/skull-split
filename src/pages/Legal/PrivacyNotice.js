@@ -10,7 +10,6 @@ import { BodyText } from '../../components/re-usable/styles/LegalStyles';
 
 function PrivacyNotice() {
   return (
-    // TODO: have the text styles reusable in all pages except the landing page
     <NestedRootOther>
       <Helmet>
         <title>Skull Split | Privacy Notice</title>
