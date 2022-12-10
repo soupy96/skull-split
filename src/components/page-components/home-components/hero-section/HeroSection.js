@@ -26,7 +26,7 @@ function HeroSection() {
 const BigImage = styled.div`
   background-image: url(${bgImage});
   background-size: cover;
-  background-position: center center;
+  /* background-position: center center; */
   background-repeat: no-repeat;
   width: 100%;
   height: calc(100vh);

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
+import ContactSection from '../components/page-components/contact-components/ContactSection';
 
+import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import { BodyText } from '../components/re-usable/styles/LegalStyles';
 
 function Contact() {
@@ -14,7 +15,11 @@ function Contact() {
       </Helmet>
       <PageTitle>Contact</PageTitle>
       <BodyText>
+<<<<<<< HEAD
         <Text>Contact page is in progress</Text>
+=======
+        <ContactSection />
+>>>>>>> dev
       </BodyText>
     </NestedRootOther>
   );

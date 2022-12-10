@@ -63,13 +63,13 @@ export const BGImageTextBox = styled.div`
 `;
 
 // Contact Page
-export const ContactInfo = styled.div`
+export const ContactInfoBox = styled.div`
   width: 50%;
   height: 500px;
   background-color: red;
 `;
 
-export const ContactForm = styled.div`
+export const ContactFormBox = styled.div`
   width: 50%;
   height: 500px;
   background-color: blue;

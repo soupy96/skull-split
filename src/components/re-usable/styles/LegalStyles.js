@@ -62,7 +62,18 @@ export const BoxText = styled.p`
   margin: 30px 0px !important;
 `;
 
-export const LegalTable = styled.table`
+export const MobileTableDiv = styled.div`
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const LegalTableTable = styled.table`
   border-collapse: collapse;
   border-spacing: 0;
 
@@ -72,16 +83,5 @@ export const LegalTable = styled.table`
     line-height: 1.5;
     font-size: 16px;
     border: 1px dotted;
-  }
-`;
-
-export const MobileTableDiv = styled.div`
-  overflow-x: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  &::-webkit-scrollbar {
-    display: none;
   }
 `;
