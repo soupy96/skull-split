@@ -15,9 +15,7 @@ function CompanyBuilding() {
         <H2Title>Skull Games Inc.</H2Title>
         <p>
           Duis in finibus massa, sit amet blandit risus. Suspendisse sed sem
-          lorem. Fusce porta est id dolor cursus molestie. Aenean quis commodo
-          dolor. Donec lacinia ipsum vel quam fringilla, a dictum risus tempor.
-          Fusce sit amet blandit dui.
+          lorem. Fusce porta est id dolor cursus molestie.
         </p>
         <p>
           In varius semper eros at varius. Praesent maximus eros nec auctor

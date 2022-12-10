@@ -7,7 +7,6 @@ import CompanyCulture from '../components/page-components/about-components/Compa
 import Careers from '../components/page-components/about-components/Careers';
 
 import { NestedRootOther } from '../components/re-usable/NestedRoot';
-import { BodyText } from '../components/re-usable/styles/LegalStyles';
 
 function About() {
   return (
@@ -18,24 +17,10 @@ function About() {
         <title>Skull Split | About</title>
       </Helmet>
       <PageTitle>About</PageTitle>
-      <BodyText>
-        <CompanyBuilding />
-        <br />
-        <br />
-        <br />
-        <br />
-        <CompanyLeads />
-        <br />
-        <br />
-        <br />
-        <br />
-        <CompanyCulture />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Careers />
-      </BodyText>
+      <CompanyBuilding />
+      <CompanyLeads />
+      <CompanyCulture />
+      <Careers />
     </NestedRootOther>
   );
 }

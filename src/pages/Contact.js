@@ -5,6 +5,7 @@ import ContactSection from '../components/page-components/contact-components/Con
 
 import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import { BodyText } from '../components/re-usable/styles/LegalStyles';
+import styled from 'styled-components';
 
 function Contact() {
   return (
@@ -13,11 +14,15 @@ function Contact() {
         <title>CoderGuides | Contact</title>
       </Helmet>
       <PageTitle>Contact</PageTitle>
-      <BodyText>
-        <ContactSection />
-      </BodyText>
+      <Text>Contact page is in progress</Text>
+      {/* <ContactSection /> */}
     </NestedRootOther>
   );
 }
+
+const Text = styled.p`
+  text-align: center;
+  margin: 25% 0px;
+`;
 
 export default Contact;

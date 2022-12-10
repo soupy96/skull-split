@@ -17,10 +17,7 @@ function Careers() {
           vitae viverra elit. Maecenas sagittis condimentum nibh, ac convallis
           ex elementum id. Ut vitae nisl sit amet ex consequat faucibus. Quisque
           at posuere metus. Praesent massa ligula, ullamcorper nec sem ut,
-          tempor posuere nibh. Pellentesque nec libero justo. Nullam mauris
-          mauris, accumsan et vestibulum sit amet, hendrerit at quam. Curabitur
-          sit amet arcu a diam dapibus consequat. Proin eu velit vestibulum
-          risus dictum aliquam id quis tortor.
+          tempor posuere nibh. Pellentesque nec libero justo.
         </p>
         <PlayNowButt>Apply Now</PlayNowButt>
       </BGImageTextBox>

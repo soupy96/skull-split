@@ -9,6 +9,7 @@ export const TwoBoxRow = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 150px;
 `;
 
 export const TextBox = styled.div`
@@ -18,6 +19,10 @@ export const TextBox = styled.div`
   align-items: center;
   width: 100%;
   padding: 100px;
+
+  p {
+    margin-bottom: 20px;
+  }
 `;
 
 export const ImgBox = styled.img`
@@ -28,6 +33,7 @@ export const ProfileContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 150px;
 `;
 
 export const ProfileBox = styled.div`
@@ -99,6 +105,7 @@ export const TwoBoxRowReverse = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 150px;
 `;
 
 export const BGImage = styled.div`
@@ -111,17 +118,18 @@ export const BGImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 `;
 
 export const BGImageTextBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: calc(100% - 60px);
   margin: 30px !important;
-  padding: 100px;
+  padding: 0px 100px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
 `;
