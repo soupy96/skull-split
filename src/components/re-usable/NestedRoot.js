@@ -7,6 +7,7 @@ function NestedRoot(props) {
 export const NestedStyle = styled.div`
   width: 80%;
   margin: auto;
+  margin-top: 100px;
 
   @media only screen and (max-width: 750px) {
     width: 90%;

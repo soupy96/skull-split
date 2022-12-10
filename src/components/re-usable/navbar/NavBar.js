@@ -45,6 +45,7 @@ const NavBarBox = styled.div`
   padding: 30px 50px;
   height: 100px;
   position: fixed;
+  top: 0;
 
   @media only screen and (max-width: 900px) {
     svg {
