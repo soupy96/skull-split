@@ -1,14 +1,10 @@
 import { Helmet } from 'react-helmet';
 
-import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
+import ContactSection from '../components/page-components/contact-components/ContactSection';
 
+import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import { BodyText } from '../components/re-usable/styles/LegalStyles';
-import {
-  ContactForm,
-  ContactInfo,
-  TwoBoxRow,
-} from '../components/re-usable/styles/ContentStyles';
 
 function Contact() {
   return (
@@ -18,10 +14,7 @@ function Contact() {
       </Helmet>
       <PageTitle>Contact</PageTitle>
       <BodyText>
-        <TwoBoxRow>
-          <ContactInfo></ContactInfo>
-          <ContactForm></ContactForm>
-        </TwoBoxRow>
+        <ContactSection />
       </BodyText>
     </NestedRootOther>
   );
