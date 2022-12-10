@@ -13,6 +13,7 @@ import GoToTop from './components/re-usable/GoToTop';
 function App() {
   return (
     // TODO: load in content on webpage while the user scrolls
+    // TODO: make sure the GoToTop functionality works proper
     <BrowserRouter>
       <GoToTop />
       <Routes>

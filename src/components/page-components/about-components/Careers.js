@@ -5,6 +5,7 @@ function Careers() {
     <BGImage>
       <BGImageTextBox>
         <p>Blurb about Careers</p>
+        <p>Blurb about Careers</p>
       </BGImageTextBox>
     </BGImage>
   );
