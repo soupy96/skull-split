@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import { NestedRootOther } from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
+// import ContactSection from '../components/page-components/contact-components/ContactSection';
 
-import { BodyText } from '../components/re-usable/styles/LegalStyles';
-import styled from 'styled-components';
+import { NestedRootOther } from '../components/re-usable/NestedRoot';
 
 function Contact() {
   return (

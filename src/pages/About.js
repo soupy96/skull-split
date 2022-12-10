@@ -6,7 +6,6 @@ import { NestedRootOther } from '../components/re-usable/NestedRoot';
 function About() {
   return (
     // TODO: replace break tags with a margin to better space stuff out
-    // TOOD: make mobile friendly
     <NestedRootOther>
       <Helmet>
         <title>Skull Split | About</title>
