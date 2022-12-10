@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Careers from '../imgs/careers.jpg';
+import Careers from '../../../assets/imgs/careers.jpg';
 
 // About Page
 export const ProfileContainer = styled.div`

@@ -1,6 +1,14 @@
 import { Helmet } from 'react-helmet';
 
 import NestedRoot from '../components/re-usable/NestedRoot';
+import PageTitle from '../components/re-usable/PageTitle';
+
+import CompanyBuilding from '../assets/imgs/company-building.jpg';
+import CEO from '../assets/imgs/ceo.jpg';
+import CreativeLead from '../assets/imgs/creative-lead.jpg';
+import LeadProgrammer from '../assets/imgs/lead-programmer.jpg';
+import CompanyCulture from '../assets/imgs/group-photo-1.jpg';
+
 import {
   BGImage,
   BGImageTextBox,
@@ -10,15 +18,8 @@ import {
   TextBox,
   TwoBoxRow,
   TwoBoxRowReverse,
-} from '../assets/css/ContentStyles';
-import PageTitle from '../components/re-usable/PageTitle';
-
-import CompanyBuilding from '../assets/imgs/company-building.jpg';
-import CEO from '../assets/imgs/ceo.jpg';
-import CreativeLead from '../assets/imgs/creative-lead.jpg';
-import LeadProgrammer from '../assets/imgs/lead-programmer.jpg';
-import CompanyCulture from '../assets/imgs/group-photo-1.jpg';
-import { BodyText } from '../assets/css/LegalStyles';
+} from '../components/re-usable/styles/ContentStyles';
+import { BodyText } from '../components/re-usable/styles/LegalStyles';
 
 function About() {
   return (

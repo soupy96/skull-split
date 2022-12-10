@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import NestedRoot from '../components/re-usable/NestedRoot';
 import PageTitle from '../components/re-usable/PageTitle';
 
-import { BodyText } from '../assets/css/LegalStyles';
+import { BodyText } from '../components/re-usable/styles/LegalStyles';
 import {
   ContactForm,
   ContactInfo,
   TwoBoxRow,
-} from '../assets/css/ContentStyles';
+} from '../components/re-usable/styles/ContentStyles';
 
 function Contact() {
   return (

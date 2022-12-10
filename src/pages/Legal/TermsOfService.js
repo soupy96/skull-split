@@ -2,12 +2,13 @@ import { Helmet } from 'react-helmet';
 
 import NestedRoot from '../../components/re-usable/NestedRoot';
 import PageTitle from '../../components/re-usable/PageTitle';
+
 import {
   BodyText,
   ListStyleAplha,
   ListStyleRomanNum,
   UpperText,
-} from '../../assets/css/LegalStyles';
+} from '../../components/re-usable/styles/LegalStyles';
 
 function TermsOfService() {
   return (

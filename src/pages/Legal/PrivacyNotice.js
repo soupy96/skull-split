@@ -7,7 +7,7 @@ import {
   BodyText,
   GreyLinkWithDots,
   MainPrivacyPointsBox,
-} from '../../assets/css/LegalStyles';
+} from '../../components/re-usable/styles/LegalStyles';
 
 function PrivacyNotice() {
   return (
