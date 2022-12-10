@@ -7,6 +7,7 @@ import HamburgerMenu from './HamburgerMenu';
 
 function NavBar() {
   return (
+    // TODO: make sure the header is above everything in z-index way
     <NavBarBox>
       <LogoMenu>
         <Link to='/'>
@@ -46,6 +47,7 @@ const NavBarBox = styled.div`
   height: 100px;
   position: fixed;
   top: 0;
+  z-index: 9999;
 
   @media only screen and (max-width: 900px) {
     svg {
