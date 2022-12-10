@@ -8,6 +8,7 @@ import { NestedRootOther } from '../components/re-usable/NestedRoot';
 
 function Contact() {
   return (
+    // TODO: use https://formik.org/ to create the form on the right side
     <NestedRootOther>
       <Helmet>
         <title>CoderGuides | Contact</title>
