@@ -1,10 +1,9 @@
 import { Helmet } from 'react-helmet';
 
 import PageTitle from '../components/re-usable/PageTitle';
-import ContactSection from '../components/page-components/contact-components/ContactSection';
+// import ContactSection from '../components/page-components/contact-components/ContactSection';
 
 import { NestedRootOther } from '../components/re-usable/NestedRoot';
-import { BodyText } from '../components/re-usable/styles/LegalStyles';
 import styled from 'styled-components';
 
 function Contact() {
