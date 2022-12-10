@@ -4,7 +4,6 @@ import { BGImage, BGImageTextBox } from '../../re-usable/styles/ContentStyles';
 
 function Careers() {
   return (
-    // TODO: make button look good
     <BGImage>
       <BGImageTextBox>
         <H4Title>Careers</H4Title>
