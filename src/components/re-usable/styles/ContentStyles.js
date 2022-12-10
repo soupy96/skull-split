@@ -1,22 +1,19 @@
 import styled from 'styled-components';
 
-import Careers from '../../../assets/imgs/careers.jpg';
+import Careers from '../../../assets/imgs/careers.webp';
 
 // About Page
-export const ProfileContainer = styled.div`
+export const TwoBoxRow = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-`;
-
-export const ProfileBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 33%;
-`;
-
-export const ImgBox = styled.img`
   width: 100%;
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -25,15 +22,99 @@ export const TextBox = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
+  padding: 100px;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    padding: 25px;
+  }
 `;
 
-export const TwoBoxRow = styled.div`
+export const ImgBox = styled.img`
+  width: 100%;
+`;
+
+export const ProfileContainer = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+`;
+
+export const ProfileBox = styled.div`
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f0ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+
+  img {
+    padding: 0px 10px;
+  }
+
+  &::before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    height: 15px;
+    width: 99%;
+    bottom: 0px;
+    left: 0px;
+    transform: skewX(0deg);
+    z-index: -1;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &::after {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    top: 0px;
+    right: 0px;
+    transform: skewY(0deg);
+    z-index: -1;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover::before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    bottom: -15px;
+    left: 8px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+  }
+
+  &:hover&::after {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 100px;
+  }
 `;
 
 export const TwoBoxRowReverse = styled.div`
@@ -42,11 +123,16 @@ export const TwoBoxRowReverse = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const BGImage = styled.div`
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-image: url(${Careers});
   background-position: center center;
   background-repeat: no-repeat;
@@ -54,12 +140,34 @@ export const BGImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+  }
 `;
 
 export const BGImageTextBox = styled.div`
   display: flex;
-  justify-content: center;
-  align-self: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 60px);
+  margin: 30px !important;
+  padding: 0px 100px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  p,
+  svg {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+    padding: 30px;
+  }
 `;
 
 // Contact Page

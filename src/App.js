@@ -8,11 +8,14 @@ import PrivacyNotice from './pages/Legal/PrivacyNotice';
 import TermsOfService from './pages/Legal/TermsOfService';
 import CookiePreferences from './pages/Legal/CookiePreferences';
 import NoPage from './pages/NoPage';
+import GoToTop from './components/re-usable/GoToTop';
 
 function App() {
   return (
     // TODO: load in content on webpage while the user scrolls
+    // TODO: make sure the GoToTop functionality works proper
     <BrowserRouter>
+      <GoToTop />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
