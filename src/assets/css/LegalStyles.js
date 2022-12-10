@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const BodyText = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 
   p,
   b,

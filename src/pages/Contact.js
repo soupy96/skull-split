@@ -1,20 +1,30 @@
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+
+import NestedRoot from '../components/re-usable/NestedRoot';
+import PageTitle from '../components/re-usable/PageTitle';
+
+import { BodyText } from '../assets/css/LegalStyles';
+import {
+  ContactForm,
+  ContactInfo,
+  TwoBoxRow,
+} from '../assets/css/ContentStyles';
 
 function Contact() {
   return (
-    <div>
+    <NestedRoot>
       <Helmet>
         <title>CoderGuides | Contact</title>
       </Helmet>
-      <Text>Contact Page in Progress</Text>
-    </div>
+      <PageTitle>Contact</PageTitle>
+      <BodyText>
+        <TwoBoxRow>
+          <ContactInfo></ContactInfo>
+          <ContactForm></ContactForm>
+        </TwoBoxRow>
+      </BodyText>
+    </NestedRoot>
   );
 }
-
-const Text = styled.div`
-  text-align: center;
-  margin: 25% 0px;
-`;
 
 export default Contact;
