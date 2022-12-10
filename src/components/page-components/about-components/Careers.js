@@ -28,6 +28,7 @@ function Careers() {
 const H4Title = styled.h4`
   font-size: 50px;
   line-height: normal;
+  margin-bottom: 30px;
 `;
 
 export default Careers;

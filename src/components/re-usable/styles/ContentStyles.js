@@ -10,6 +10,10 @@ export const TwoBoxRow = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -23,6 +27,10 @@ export const TextBox = styled.div`
   p {
     margin-bottom: 20px;
   }
+
+  @media only screen and (max-width: 1400px) {
+    padding: 25px;
+  }
 `;
 
 export const ImgBox = styled.img`
@@ -34,6 +42,10 @@ export const ProfileContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProfileBox = styled.div`
@@ -43,14 +55,15 @@ export const ProfileBox = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   width: 30%;
-  height: 400px;
+  height: 100%;
   position: relative;
+  padding: 10px;
 
   img {
     padding: 0px 10px;
   }
 
-  ::before {
+  &::before {
     content: '';
     background-color: #000000;
     position: absolute;
@@ -97,6 +110,11 @@ export const ProfileBox = styled.div`
     width: 15px;
     transform: skewY(45deg);
   }
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 100px;
+  }
 `;
 
 export const TwoBoxRowReverse = styled.div`
@@ -106,11 +124,15 @@ export const TwoBoxRowReverse = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const BGImage = styled.div`
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-image: url(${Careers});
   background-position: center center;
   background-repeat: no-repeat;
@@ -119,6 +141,10 @@ export const BGImage = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
+
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+  }
 `;
 
 export const BGImageTextBox = styled.div`
@@ -132,6 +158,16 @@ export const BGImageTextBox = styled.div`
   padding: 0px 100px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
+
+  p,
+  svg {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+    padding: 30px;
+  }
 `;
 
 // Contact Page

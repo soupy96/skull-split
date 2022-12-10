@@ -47,7 +47,7 @@ const H3Title = styled.h3`
 `;
 
 const LeadTextBox = styled(TextBox)`
-  padding: 0px !important;
+  padding: 25px !important;
 
   p {
     margin: 0px !important;
@@ -84,6 +84,11 @@ const LeftProfileBox = styled(ProfileBox)`
     top: 8px;
     transform: skewY(-45deg);
     left: -15px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 100px;
   }
 `;
 
