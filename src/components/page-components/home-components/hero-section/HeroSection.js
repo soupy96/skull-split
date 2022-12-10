@@ -29,7 +29,7 @@ const BigImage = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
