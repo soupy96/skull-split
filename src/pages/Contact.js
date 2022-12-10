@@ -15,11 +15,7 @@ function Contact() {
       </Helmet>
       <PageTitle>Contact</PageTitle>
       <BodyText>
-<<<<<<< HEAD
-        <Text>Contact page is in progress</Text>
-=======
         <ContactSection />
->>>>>>> dev
       </BodyText>
     </NestedRootOther>
   );

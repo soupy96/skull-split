@@ -7,10 +7,7 @@ import CompanyLeads from '../components/page-components/about-components/Company
 import CompanyCulture from '../components/page-components/about-components/CompanyCulture';
 import Careers from '../components/page-components/about-components/Careers';
 
-<<<<<<< HEAD
-=======
 import { NestedRootOther } from '../components/re-usable/NestedRoot';
->>>>>>> dev
 import { BodyText } from '../components/re-usable/styles/LegalStyles';
 
 function About() {
@@ -21,9 +18,6 @@ function About() {
       </Helmet>
       <PageTitle>About</PageTitle>
       <BodyText>
-<<<<<<< HEAD
-        <Text>About page in progress</Text>
-=======
         <CompanyBuilding />
         <br />
         <br />
@@ -40,7 +34,6 @@ function About() {
         <br />
         <br />
         <Careers />
->>>>>>> dev
       </BodyText>
     </NestedRootOther>
   );
