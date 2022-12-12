@@ -1,14 +1,12 @@
-import {
-  ContactFormBox,
-  ContactInfoBox,
-  TwoBoxRow,
-} from '../../re-usable/styles/ContentStyles';
+import { TwoBoxRow } from '../../re-usable/styles/ContentStyles';
+import ContactInfo from './ContactInfo';
+import ContactForm from './ContactForm';
 
 function ContactSection() {
   return (
     <TwoBoxRow>
-      <ContactInfoBox />
-      <ContactFormBox />
+      <ContactInfo />
+      <ContactForm />
     </TwoBoxRow>
   );
 }

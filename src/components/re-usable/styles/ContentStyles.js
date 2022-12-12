@@ -174,11 +174,25 @@ export const BGImageTextBox = styled.div`
 export const ContactInfoBox = styled.div`
   width: 50%;
   height: 500px;
-  background-color: red;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  a {
+    color: #000000;
+    margin-bottom: 30px;
+  }
 `;
 
 export const ContactFormBox = styled.div`
   width: 50%;
   height: 500px;
   background-color: blue;
+`;
+
+export const ContactH2 = styled.h2`
+  font-size: 60px;
+  line-height: normal;
 `;
