@@ -4,7 +4,7 @@ import PageTitle from '../components/re-usable/PageTitle';
 import ContactSection from '../components/page-components/contact-components/ContactSection';
 
 import { NestedRootOther } from '../components/re-usable/NestedRoot';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 function Contact() {
   return (
@@ -20,9 +20,9 @@ function Contact() {
   );
 }
 
-const Text = styled.p`
-  text-align: center;
-  margin: 25% 0px;
-`;
+// const Text = styled.p`
+//   text-align: center;
+//   margin: 25% 0px;
+// `;
 
 export default Contact;

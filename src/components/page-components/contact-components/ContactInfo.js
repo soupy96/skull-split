@@ -19,7 +19,7 @@ function ContactInfo() {
       <a
         href='https://goo.gl/maps/Hu9fywiQtmeNL81w5'
         target='_blank'
-        rel='nofollow'
+        rel='noreferrer'
       >
         123 Sesame Street
         <br />

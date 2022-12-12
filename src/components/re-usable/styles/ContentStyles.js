@@ -173,23 +173,38 @@ export const BGImageTextBox = styled.div`
 // Contact Page
 export const ContactInfoBox = styled.div`
   width: 50%;
-  height: 500px;
-  /* background-color: red; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   a {
     color: #000000;
     margin-bottom: 30px;
   }
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 100px;
+  }
 `;
 
 export const ContactFormBox = styled.div`
   width: 50%;
-  height: 500px;
-  background-color: blue;
+  height: 100%;
+
+  form > * {
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const ContactH2 = styled.h2`
