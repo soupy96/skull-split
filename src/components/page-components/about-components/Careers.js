@@ -18,7 +18,7 @@ function Careers() {
           at posuere metus. Praesent massa ligula, ullamcorper nec sem ut,
           tempor posuere nibh. Pellentesque nec libero justo.
         </p>
-        <PlayNowButt>Apply Now</PlayNowButt>
+        <PlayNowButt href='javascript:void(0)'>Apply Now</PlayNowButt>
       </BGImageTextBox>
     </BGImage>
   );
