@@ -15,7 +15,7 @@ function NavBar() {
         </Link>
         <NavMenu />
       </LogoMenu>
-      <PlayNowButt href='javascript:void(0)'>Play Now</PlayNowButt>
+      <PlayNowButt href='#'>Play Now</PlayNowButt>
       <HamburgerMenu />
     </NavBarBox>
   );
