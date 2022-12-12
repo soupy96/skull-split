@@ -72,10 +72,6 @@ const InnerRoot = styled.div`
   }
 `;
 
-// const BodySVG = styled.svg`
-//   margin: 0px 0px 75px 0px;
-// `;
-
 const Title = styled.h2`
   font-size: 60px;
   color: #f0ff00;
