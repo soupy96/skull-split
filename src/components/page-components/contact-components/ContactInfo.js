@@ -28,7 +28,7 @@ function ContactInfo() {
         USA
       </a>
       <a href='tel:18008888888'>1-800-888-8888</a>
-      <PlayNowButt onClick={testing} href='javascript:void(0)'>
+      <PlayNowButt onClick={testing} href='#'>
         Leave a Review
       </PlayNowButt>
     </ContactInfoBox>
