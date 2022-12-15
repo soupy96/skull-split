@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 
-import Footer from './footer/Footer';
 import NavBar from './navbar/NavBar';
 import StickySocials from './sticky-socials/StickySocials';
+import Footer from './footer/Footer';
 
 function Layout() {
   return (

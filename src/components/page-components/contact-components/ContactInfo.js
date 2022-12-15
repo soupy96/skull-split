@@ -13,7 +13,6 @@ function ContactInfo() {
   };
 
   return (
-    // TODO: list out the reviews from the google maps api
     <ContactInfoBox>
       <ContactH2>Skull Split</ContactH2>
       <a
