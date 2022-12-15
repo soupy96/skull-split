@@ -1,16 +1,22 @@
 import styled from 'styled-components';
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 import {
   TwoBoxRowReverse,
   TextBox,
   ImgBox,
 } from '../../re-usable/styles/ContentStyles';
+import 'aos/dist/aos.css';
 
 import CompanyCultureImg from '../../../assets/imgs/group-photo-1.webp';
 
 function CompanyCulture() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <TwoBoxRowReverse>
+    <TwoBoxRowReverse data-aos='fade-up'>
       <TextBox>
         <H3Title>Company Culutre</H3Title>
         <p>

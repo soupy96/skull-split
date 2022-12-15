@@ -19,21 +19,21 @@ function InfoCards() {
     <NestedRoot>
       <Root>
         {/* Appears on the desktop */}
-        <LeftDropShadow data-aos='fade-right'>
+        <LeftDropShadow data-aos='fade-up'>
           <SmallText>Lorem ipsum dolor sit amet</SmallText>
           <MiddleText>Ut sit amet pretuim ex</MiddleText>
           <LargeText>
             <GreenText>$100,000,000!</GreenText>
           </LargeText>
         </LeftDropShadow>
-        <MiddleDropShadow data-aos='fade-up'>
+        <MiddleDropShadow data-aos='fade-up' data-aos-delay='200'>
           <LargeText>Lorem ipsum</LargeText>
           <MiddleText>
             <GreenText>Rutrum odio</GreenText>
           </MiddleText>
           <SmallText>Sit amet purus</SmallText>
         </MiddleDropShadow>
-        <RightDropShadow data-aos='fade-left'>
+        <RightDropShadow data-aos='fade-up' data-aos-delay='400'>
           <LargeText>Vestibulum</LargeText>
           <MiddleText>Dolor accumsan laoreet</MiddleText>
           <SmallText>

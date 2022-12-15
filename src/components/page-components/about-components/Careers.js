@@ -1,10 +1,17 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
 import PlayNowButt from '../../re-usable/navbar/PlayNowButt';
+
 import { BGImage, BGImageTextBox } from '../../re-usable/styles/ContentStyles';
+import 'aos/dist/aos.css';
 
 function Careers() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <BGImage>
+    <BGImage data-aos='fade-up'>
       <BGImageTextBox>
         <H4Title>Careers</H4Title>
         <p>

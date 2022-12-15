@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
 
 import {
@@ -5,12 +7,16 @@ import {
   TextBox,
   ImgBox,
 } from '../../re-usable/styles/ContentStyles';
+import 'aos/dist/aos.css';
 
 import CompanyBuildingImg from '../../../assets/imgs/company-building.webp';
 
 function CompanyBuilding() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <TwoBoxRow>
+    <TwoBoxRow data-aos='fade-up'>
       <CenterText>
         <H2Title>Skull Games Inc.</H2Title>
         <p>

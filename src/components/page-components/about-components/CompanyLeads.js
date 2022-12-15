@@ -1,20 +1,27 @@
+import styled from 'styled-components';
+import { useEffect } from 'react';
+import AOS from 'aos';
+
 import {
   ProfileContainer,
   ProfileBox,
   ImgBox,
   TextBox,
 } from '../../re-usable/styles/ContentStyles';
+import 'aos/dist/aos.css';
 
 import CEO from '../../../assets/imgs/ceo.webp';
 import CreativeLead from '../../../assets/imgs/creative-lead.webp';
 import LeadProgrammer from '../../../assets/imgs/lead-programmer.webp';
-import styled from 'styled-components';
 
 function CompanyLeads() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <H3Title>The Team</H3Title>
-      <ProfileContainer>
+      <ProfileContainer data-aos='fade-up'>
         <LeftProfileBox>
           <ImgBox src={CEO} />
           <LeadTextBox>
