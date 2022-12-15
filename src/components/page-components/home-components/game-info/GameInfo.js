@@ -1,11 +1,18 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
+
 import NestedRoot from '../../../re-usable/NestedRoot';
+import 'aos/dist/aos.css';
 
 function GameInfo() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <MainInfo>
       <NestedRoot>
-        <InnerRoot>
+        <InnerRoot data-aos='fade-up'>
           <Title>Lorem Ipsum 2077/08/14</Title>
           <InfoText>
             <MediumText>Ut at eleifend mi.</MediumText>

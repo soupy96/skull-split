@@ -1,14 +1,21 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
 
 import NestedRoot from '../../../re-usable/NestedRoot';
+import 'aos/dist/aos.css';
 
 import bgImage from '../../../../assets/imgs/hero-image.webp';
 
 function HeroSection() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <BigImage>
       <NestedRoot>
-        <MiddleText>
+        <MiddleText data-aos='fade-up'>
           <p>A 5v5 character-based tactical shooter</p>
           <h1>SKULL SPLIT</h1>
           <MainButt>

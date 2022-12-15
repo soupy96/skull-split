@@ -1,7 +1,10 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import NestedRoot from '../../../re-usable/NestedRoot';
+import 'aos/dist/aos.css';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,25 +12,28 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
 
 function InfoCards() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <NestedRoot>
       <Root>
         {/* Appears on the desktop */}
-        <LeftDropShadow>
+        <LeftDropShadow data-aos='fade-right'>
           <SmallText>Lorem ipsum dolor sit amet</SmallText>
           <MiddleText>Ut sit amet pretuim ex</MiddleText>
           <LargeText>
             <GreenText>$100,000,000!</GreenText>
           </LargeText>
         </LeftDropShadow>
-        <MiddleDropShadow>
+        <MiddleDropShadow data-aos='fade-up'>
           <LargeText>Lorem ipsum</LargeText>
           <MiddleText>
             <GreenText>Rutrum odio</GreenText>
           </MiddleText>
           <SmallText>Sit amet purus</SmallText>
         </MiddleDropShadow>
-        <RightDropShadow>
+        <RightDropShadow data-aos='fade-left'>
           <LargeText>Vestibulum</LargeText>
           <MiddleText>Dolor accumsan laoreet</MiddleText>
           <SmallText>
@@ -41,6 +47,7 @@ function InfoCards() {
           navigation={true}
           modules={[Navigation]}
           className='mySwiper'
+          data-aos='fade-up'
         >
           <SwiperSlideCustom>
             <SmallText>Lorem ipsum dolor sit amet</SmallText>

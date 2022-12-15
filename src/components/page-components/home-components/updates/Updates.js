@@ -1,6 +1,9 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import styled from 'styled-components';
 
 import NestedRoot from '../../../re-usable/NestedRoot';
+import 'aos/dist/aos.css';
 
 import gridImg1 from '../../../../assets/imgs/grid-1.webp';
 import gridImg2 from '../../../../assets/imgs/grid-2.webp';
@@ -9,10 +12,13 @@ import gridImg4 from '../../../../assets/imgs/grid-4.webp';
 import gridImg5 from '../../../../assets/imgs/grid-5.webp';
 
 function Updates() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <Root>
       <NestedRoot>
-        <InnerRoot>
+        <InnerRoot data-aos='fade-up'>
           <UpdatesTitle>Updates</UpdatesTitle>
           <GridContainer>
             <GridBox1>

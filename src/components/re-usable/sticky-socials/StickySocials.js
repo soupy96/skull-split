@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -6,9 +8,14 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
 
+import 'aos/dist/aos.css';
+
 function StickySocials() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
-    <SocialsColumn>
+    <SocialsColumn data-aos='fade-right'>
       <SocialBG
         href='https://www.facebook.com/'
         rel='noreferrer'
