@@ -1,6 +1,7 @@
 @import url('./fonts.css');
 @import url('./slider.css');
 @import url('./hamburger.css');
+@import url('./LoadingSpinner.css');
 
 * {
   margin: 0;
