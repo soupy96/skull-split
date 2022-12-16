@@ -1,13 +1,17 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/re-usable/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import PrivacyNotice from './pages/Legal/PrivacyNotice';
-import TermsOfService from './pages/Legal/TermsOfService';
-import CookiePreferences from './pages/Legal/CookiePreferences';
-import NoPage from './pages/NoPage';
+
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const PrivacyNotice = React.lazy(() => import('./pages/Legal/PrivacyNotice'));
+const TermsOfService = React.lazy(() => import('./pages/Legal/TermsOfService'));
+const CookiePreferences = React.lazy(() =>
+  import('./pages/Legal/CookiePreferences')
+);
+const NoPage = React.lazy(() => import('./pages/NoPage'));
 
 function App() {
   return (
