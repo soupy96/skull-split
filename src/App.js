@@ -11,7 +11,6 @@ import NoPage from './pages/NoPage';
 
 function App() {
   return (
-    // TODO: load in content on webpage while the user scrolls
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
