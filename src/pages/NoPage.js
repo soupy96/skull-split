@@ -7,7 +7,7 @@ function NoPage() {
       <Helmet>
         <title>Skull Split | 404</title>
       </Helmet>
-      <Text>404 Page in Progress</Text>
+      <Text>404 Page</Text>
     </div>
   );
 }
