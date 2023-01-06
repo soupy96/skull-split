@@ -36,9 +36,7 @@ function ContactForm() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // setSubmitting(true);
       console.log(values);
-      // alert(JSON.stringify(values, null, 2));
       fetch('https://0cec9107-5bdb-4206-a502-4628165230c0.mock.pstmn.io', {
         method: 'POST',
         headers: {
